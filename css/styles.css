@@ -1,0 +1,557 @@
+/* =================================================
+  page styles
+==================================================== */
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body, html {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  background: #f0ffff;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+/* =================================================
+  header styles
+==================================================== */
+
+header {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  color: white;
+  /* background gradient done with https://www.css-gradient.com/ */
+  background: #03B2DD;
+  background: -webkit-linear-gradient(bottom, #03B2DD, #9E6912);
+  background: -moz-linear-gradient(bottom, #03B2DD, #9E6912);
+  background: linear-gradient(to top, #03B2DD, #9E6912);
+}
+
+.header-content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.profile-pic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: none;
+  transition: transform .4s;
+  /* shadow effect from https://html-css-js.com/css/generator/box-shadow/ */
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.header-text {
+  padding: 30px;
+}
+
+.header-text h2 {
+  /* text shadow adapted from https://html-css-js.com/css/generator/text-shadow/ */
+  color: #e0dfdc;
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+}
+
+.header-text p {
+  font-weight: bold;
+  letter-spacing: .3em;
+  animation: blinkingText 2.5s infinite;
+}
+
+/* text shadow adapted from https://html-css-js.com/css/generator/text-shadow/ */
+@keyframes blinkingText{
+  /* orangered color */
+  0%{     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500, 0 0 55px #ff4500, 0 0 75px #ff4500;    }
+  /* vegas color */
+  33%{    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px }
+  /* neon green color */
+  66%{ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18; }
+  /* back to orangered */
+  100%{   text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500, 0 0 55px #ff4500, 0 0 75px #ff4500;    }
+}
+
+.location {
+  font-size: 50%;
+}
+
+/* =================================================
+  navigation styles
+==================================================== */
+
+nav {
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  z-index: 10;
+}
+
+/* nav bar style adapted from https://www.w3schools.com/Css/css_navbar_horizontal.asp */
+.nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.item {
+  float: left;
+}
+
+.item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.item a:hover {
+  background-color: #111;
+}
+
+/* =================================================
+  main content and about styles
+==================================================== */
+
+main {
+  padding: 1em;
+  margin: 0px auto;
+  max-width: 1200px;
+}
+
+.about {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background: #faebd7;
+  border-radius: 5px;
+  /*  shadow effect #30 at https://getcssscan.com/css-box-shadow-examples */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+h3 {
+  font-size: 250%;
+  color: #333333;
+  text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+}
+
+.about p {
+  line-height: 2;
+  padding: 0 40px;
+  font-size: 150%;
+}
+
+.about a {
+  font-weight: bold;
+  color: #ff6347
+}
+
+.about a:hover {
+  color: #dc143c;
+  transition-duration: .875s;
+}
+
+.html {
+  color: #b22222;
+}
+
+.css {
+  color: white;
+  text-shadow: 5px 5px 10px black, 0 0 25px #c71585, 0 0 5px #ff00ff;
+}
+
+.css:hover {
+  text-shadow: 5px 5px 10px black, 0 0 25px #c71585, 0 0 5px #00ffff;
+  transition-duration: .875s;
+}
+
+.js {
+  color: #00bfff;
+  cursor: pointer;
+}
+
+/* =================================================
+  project styles
+==================================================== */
+
+.projects {
+  padding-top: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+
+}
+
+.project-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.image-container {
+  cursor: pointer;
+  height: 300px;
+  margin: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  /*  shadow effect #30 at https://getcssscan.com/css-box-shadow-examples */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+  align-items: center;
+  height: inherit;
+  opacity: 0;
+  background: #000;
+  color: #fff;
+  transition: transform .875s ease-out;
+  transform: translateY(100%);
+}
+
+.image-container:hover .overlay {
+  opacity: .7;
+  transform: translateY(0);
+}
+
+.more-info {
+  padding: 30px;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: bold;
+  /* text shadow from  https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
+  text-shadow: 0 0 10px #FFFFFF;
+
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  max-height: 400px;
+  margin: 5px;
+  padding: 10px;
+  background: #f5f5dc;
+  border-radius: 5px;
+  /*  shadow effect from https://getcssscan.com/css-box-shadow-examples */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.text-container h4 {
+  font-size: 200%;
+  margin: 10px 0;
+  /* text shadow adapted from  https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 10px 10px 10px rgba(0,0,0,.5);
+}
+
+.text-container p {
+  line-height: 2;
+}
+
+.project-button {
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.project-button:hover {
+  background-color: #ff1493;
+  transition-duration: .875s;
+}
+
+.biosecurity-image {
+  background-image: url("../images/biosecurity.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project1 h4 {
+  color: #4682b4
+}
+
+.project1 button {
+  background-color: #4682b4
+}
+
+.fire-ant-image {
+  background-image: url("../images/fire-ants.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project2 h4 {
+  color: #b22222;
+}
+
+.project2 button {
+  background-color: #b22222;
+}
+
+.prep-chart-image {
+  background-image: url("../images/treat-prep-chart.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project3 h4 {
+  color: #2e8b57;
+}
+
+.project3 button {
+  background-color: #2e8b57;
+}
+
+.phrase-game-image {
+  background-image: url("../images/phrase-game.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project4 h4 {
+  color: #ff4500;
+}
+
+.project4 button {
+  background-color: #ff4500;
+}
+
+.dashboard-image {
+  background-image: url("../images/dashboard.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project5 h4 {
+  color: #4b0082;
+}
+
+.project5 button {
+  background-color: #4b0082;
+}
+
+/* =================================================
+  contact styles
+==================================================== */
+
+.contact {
+  background-color: #f5eee5;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 70px;
+  /*  shadow effect #87 at https://getcssscan.com/css-box-shadow-examples */
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.icon-container {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  max-height: 50px;
+  margin: 20px;
+  padding: 0;
+
+}
+
+#github {
+max-height: 50px;
+transition: transform .4s ease-out;
+}
+
+#github:hover {
+  transform: scale(1.2);
+}
+
+#linkedin {
+  max-height: 50px;
+  transition: transform .4s;
+}
+
+#linkedin:hover {
+  transform: scale(1.2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.form h4 {
+  margin: 15px;
+  padding: 10px;
+}
+
+.input-field {
+  border: solid 1px #d4d4d4;
+  border-radius: 5px;
+  font-size: 18px;
+  height: 40px;
+  width: 100%;
+  margin: 0px 20px 10px 20px;
+  padding: 15px;
+  background-color: #f7fdff;
+}
+
+textarea {
+  border: solid 1px #d4d4d4;
+  border-radius: 5px;
+  font-size: 18px;
+  height: 150px;
+  width: 100%;
+  margin: 10px 20px;
+  padding: 15px;
+  background-color: #f7fdff;
+}
+
+.send {
+  background-color: #1342eb;
+  width: 80%;
+  padding: 15px;
+  margin: 15px auto;
+}
+
+/* =================================================
+  footer styles
+==================================================== */
+
+footer {
+  background-color: #777;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* background gradient done with https://www.css-gradient.com/ */
+  background: #03B2DD;
+  background: -webkit-linear-gradient(bottom, #9E6912, #03B2DD);
+  background: -moz-linear-gradient(bottom, #9E6912, #03B2DD);
+  background: linear-gradient(to top, #9E6912, #03B2DD);
+}
+
+footer a {
+  font-weight: bold;
+  color: #fffafa;
+}
+
+footer a:hover {
+  color: #8b008b;
+  transition-duration: .875s;
+}
+
+/* =================================================
+  Media queries
+==================================================== */
+
+@media (min-width: 768px) {
+
+  main {
+    padding: 5em;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .profile-pic {
+    display: block;
+  }
+
+  .project-container {
+    margin-bottom: 60px;
+  }
+
+  .project-button {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .project-container {
+    flex-direction: row-reverse;
+    margin-bottom: 120px;
+  }
+
+  .text-container {
+    width: 40%;
+    padding: 60px;
+  }
+
+  .project-button {
+    width: 80%;
+  }
+
+  .image-container {
+    width: 60%;
+    height: 400px;
+  }
+
+  .overlay {
+    transform: translateX(-100%);
+  }
+
+  .image-container:hover .overlay {
+    transform: translateX(0);
+  }
+
+  .more-info {
+    line-height: 2;
+  }
+
+  .contact {
+    margin-bottom: 40px;
+  }
+
+  .icon-container {
+    justify-content: space-evenly;
+  }
+
+  .send {
+    width: 40%;
+  }
+
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MG's Front End Showcase</title>
+    <!-- Scripts to send email -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_0tagcQ1gmclJDxwAymjso');
+        })();
+    </script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header-content">
+          <img class="profile-pic" src="images/profile-image.jpg" alt="profile image">
+          <div class="header-text">
+            <h2>Michael Godfrey</h2>
+            <p>Front End Web Developer</p>
+            <span class="location">Location: Melbourne, Australia</span>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <ul class="nav-items">
+          <li class="item"><a href="#">Home</a></li>
+          <li class="item"><a href="#about">About</a></li>
+          <li class="item"><a href="#projects">Projects</a></li>
+          <li class="item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+
+        <div id="about" class="about">
+          <h3>About</h3>
+          <p>Welcome! Thank you for visiting. Here I present selected projects to display my new skills in
+            <span class='html'>&lt;HTML&gt;</span>,
+            <span class="css">{CSS}</span> and
+            <span class="js">(JavaScript)</span>.
+            There is a mix of my own ideas as well as assignments for
+          <a href="https://teamtreehouse.com" target="_blank">Treehouse TechDegree</a>: Front-End Web Development.
+            Feel free to browse the projects and reach out via the message or links here if you'd like to get in touch.</p>
+        </div>
+
+        <!-- start project container -->
+        <div id="projects" class="projects">
+          <h3>Selected Projects</h3>
+
+          <div class="project-container">
+            <div class="image-container biosecurity-image" onclick="window.open('https://michagodfrey.github.io/biosecurity-tips/','mywindow');">
+              <div class="overlay">
+                <p class="more-info">
+                  Biosecurity Tips aims to provide up-to-date information about quarantine controls
+                  between Australian states for travellers and producers. This is an under-served topic that is not easy
+                  to find reliable information about. Here is a first step in an effort to change that.
+                </p>
+              </div>
+            </div>
+            <div class="text-container project1">
+              <h4>Biosecurity Tips</h4>
+              <p>First step for a web page that provides information about quarantine regulations for organic products.</p>
+              <!-- nifty onclick feature found here: https://stackoverflow.com/questions/2188272/html-how-to-make-an-entire-div-a-hyperlink -->
+              <button onclick="window.open('https://michagodfrey.github.io/biosecurity-tips/','mywindow');" type="button" name="button" class="project-button">Open Project</button>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="image-container fire-ant-image" onclick="window.open('https://michagodfrey.github.io/fire-ants/','mywindow');">
+              <div class="overlay">
+                <p class="more-info">
+                  A succinct information page about red imported fire ant (RIFA).
+                  The page contains an embedded YouTube video and links to official sources on the topic.
+                </p>
+              </div>
+            </div>
+            <div class="text-container project2">
+              <h4>Red Imported Fire Ants</h4>
+              <p>An information page about the invasive ant species.</p>
+              <button onclick="window.open('https://michagodfrey.github.io/fire-ants/','mywindow');" type="button" name="button" class="project-button">Open Project</button>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div class="image-container prep-chart-image" onclick="window.open('https://michagodfrey.github.io/treatment-prep-chart-generator/','mywindow');">
+              <div class="overlay">
+                <p class="more-info">
+                  Businesses that export commodities interstate often have to treat produce and maintain records for auditing.
+                  This web form takes the inputs for a pesticide chemical product and outputs water to chemical mixing ratios.
+                </p>
+              </div>
+            </div>
+            <div class="text-container project3">
+              <h4>Chemical Treatment Preparation Chart</h4>
+              <p>A web form to calculate chemical treatment rates and present them on a PDF.</p>
+              <button onclick="window.open('https://michagodfrey.github.io/treatment-prep-chart-generator/','mywindow');" type="button" name="button" class="project-button">Open Project</button>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div onclick="window.open('https://michagodfrey.github.io/phrase-guessing-game/','mywindow');" class="image-container phrase-game-image">
+              <div class="overlay">
+                <p class="more-info">
+                  A simple phrase guessing game that uses JavaScript to manipulate strings. This project taught me a lot about loops and manipulating HTML elements with JavaScript.
+                </p>
+              </div>
+
+            </div>
+            <div class="text-container project4">
+              <h4>Phrase Guessing Game</h4>
+              <p>A project for Treehouse Front End Web Development TechDegree.</p>
+              <button onclick="window.open('https://michagodfrey.github.io/phrase-guessing-game/','mywindow');" type="button" name="button" class="project-button">Open Project</button>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <div onclick="window.open('https://michagodfrey.github.io/dashboard/','mywindow');" class="image-container dashboard-image">
+              <div class="overlay">
+                <p class="more-info">
+                  A mock-up page of a dashboard layout.
+                  This project sharpened my CSS skills to get all the components in place and to make them responsive.
+                </p>
+              </div>
+            </div>
+            <div class="text-container project5">
+              <h4>Dashboard</h4>
+              <p>A project for Treehouse Front End Web Development TechDegree.</p>
+              <button onclick="window.open('https://michagodfrey.github.io/dashboard/','mywindow');" type="button" name="button" class="project-button">Open Project</button>
+            </div>
+          </div>
+        </div>
+      <!-- end project container -->
+
+        <!-- contact -->
+        <div id="contact" class="contact">
+          <h3>Contact</h3>
+          <ul class="icon-container">
+            <li>
+              <a href="https://github.com/michagodfrey?tab=repositories" target="_blank">
+                <svg id="github" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" ><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: #000);"></circle>
+                  <path class="inner-shape" style="opacity:1;fill:#f7f7f7;" transform="translate(25,25) scale(0.5)" d="M50,1C22.938,1,1,22.938,1,50s21.938,49,49,49s49-21.938,49-49S77.062,1,50,1z M79.099,79.099 c-3.782,3.782-8.184,6.75-13.083,8.823c-1.245,0.526-2.509,0.989-3.79,1.387v-7.344c0-3.86-1.324-6.699-3.972-8.517 c1.659-0.16,3.182-0.383,4.57-0.67c1.388-0.287,2.855-0.702,4.402-1.245c1.547-0.543,2.935-1.189,4.163-1.938 c1.228-0.75,2.409-1.723,3.541-2.919s2.082-2.552,2.847-4.067s1.372-3.334,1.818-5.455c0.446-2.121,0.67-4.458,0.67-7.01 c0-4.945-1.611-9.155-4.833-12.633c1.467-3.828,1.308-7.991-0.478-12.489l-1.197-0.143c-0.829-0.096-2.321,0.255-4.474,1.053 c-2.153,0.798-4.57,2.105-7.249,3.924c-3.797-1.053-7.736-1.579-11.82-1.579c-4.115,0-8.039,0.526-11.772,1.579 c-1.69-1.149-3.294-2.097-4.809-2.847c-1.515-0.75-2.727-1.26-3.637-1.532c-0.909-0.271-1.754-0.439-2.536-0.503 c-0.782-0.064-1.284-0.079-1.507-0.048c-0.223,0.031-0.383,0.064-0.478,0.096c-1.787,4.53-1.946,8.694-0.478,12.489 c-3.222,3.477-4.833,7.688-4.833,12.633c0,2.552,0.223,4.889,0.67,7.01c0.447,2.121,1.053,3.94,1.818,5.455 c0.765,1.515,1.715,2.871,2.847,4.067s2.313,2.169,3.541,2.919c1.228,0.751,2.616,1.396,4.163,1.938 c1.547,0.543,3.014,0.957,4.402,1.245c1.388,0.287,2.911,0.511,4.57,0.67c-2.616,1.787-3.924,4.626-3.924,8.517v7.487 c-1.445-0.43-2.869-0.938-4.268-1.53c-4.899-2.073-9.301-5.041-13.083-8.823c-3.782-3.782-6.75-8.184-8.823-13.083 C9.934,60.948,8.847,55.56,8.847,50s1.087-10.948,3.231-16.016c2.073-4.899,5.041-9.301,8.823-13.083s8.184-6.75,13.083-8.823 C39.052,9.934,44.44,8.847,50,8.847s10.948,1.087,16.016,3.231c4.9,2.073,9.301,5.041,13.083,8.823 c3.782,3.782,6.75,8.184,8.823,13.083c2.143,5.069,3.23,10.457,3.23,16.016s-1.087,10.948-3.231,16.016 C85.848,70.915,82.88,75.317,79.099,79.099L79.099,79.099z"></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/michael-godfrey-82258bb3/" target="_blank">
+                <svg id="linkedin" class="custom-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"><circle class="outer-shape" cx="50" cy="50" r="48" style="opacity: 1; fill: #000);"></circle>
+                  <path class="inner-shape" style="opacity:1;fill:#f7f7f7;" transform="translate(25,25) scale(0.5)" d="M82.539,1H17.461C8.408,1,1,8.408,1,17.461v65.078C1,91.592,8.408,99,17.461,99h65.078C91.592,99,99,91.592,99,82.539 V17.461C99,8.408,91.592,1,82.539,1z M37.75,80.625H25.5V37.75h12.25V80.625z M31.625,31.625c-3.383,0-6.125-2.742-6.125-6.125 s2.742-6.125,6.125-6.125s6.125,2.742,6.125,6.125S35.008,31.625,31.625,31.625z M80.625,80.625h-12.25v-24.5 c0-3.383-2.742-6.125-6.125-6.125s-6.125,2.742-6.125,6.125v24.5h-12.25V37.75h12.25v7.606c2.526-3.47,6.389-7.606,10.719-7.606 c7.612,0,13.782,6.856,13.782,15.312L80.625,80.625L80.625,80.625z"></path>
+                </svg>
+              </a>
+            </li>
+        </ul>
+        <form id="contact-form" class="form">
+          <h4>Send a direct message</h4>
+          <input id="name" type="text" name="user_name" class="input-field" placeholder="Your name">
+          <input id="email" type="email" name="user_email" class="input-field" placeholder="Your email">
+          <textarea id="message" name="message" placeholder="Message"></textarea>
+          <button type="submit" name="button" class="project-button send">Send</button>
+        </form>
+
+        </div>
+        <!-- end contact -->
+
+        </main>
+
+        <footer>
+          <a href="#">Back to top</a>
+        </footer>
+
+      </div>
+      <!-- end wrapper -->
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
