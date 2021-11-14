@@ -308,6 +308,11 @@ h3 {
   background-color: #4682b4
 }
 
+.project1 button:hover {
+  background-color: #00ced1;
+  transition-duration: .875s;
+}
+
 .fire-ant-image {
   background-image: url("../images/fire-ants.jpg");
   background-size: cover;
@@ -320,6 +325,11 @@ h3 {
 
 .project2 button {
   background-color: #b22222;
+}
+
+.project2 button:hover {
+  background-color: #dc143c;
+  transition-duration: .875s;
 }
 
 .prep-chart-image {
@@ -336,6 +346,11 @@ h3 {
   background-color: #2e8b57;
 }
 
+.project3 button:hover {
+  background-color: #32cd32;
+  transition-duration: .875s;
+}
+
 .phrase-game-image {
   background-image: url("../images/phrase-game.jpg");
   background-size: cover;
@@ -350,6 +365,11 @@ h3 {
   background-color: #ff4500;
 }
 
+.project4 button:hover {
+  background-color: #ff7f50;
+  transition-duration: .875s;
+}
+
 .dashboard-image {
   background-image: url("../images/dashboard.jpg");
   background-size: cover;
@@ -362,6 +382,11 @@ h3 {
 
 .project5 button {
   background-color: #4b0082;
+}
+
+.project5 button:hover {
+  background-color: #9370db;
+  transition-duration: .875s;
 }
 
 /* =================================================
@@ -448,6 +473,16 @@ textarea {
   width: 80%;
   padding: 15px;
   margin: 15px auto;
+}
+
+.send:hover {
+  background-color: #4169e1;;
+  transition-duration: .875s;
+}
+
+.send:active {
+  background-color: #00bfff;
+  transition-duration: .875s;
 }
 
 /* =================================================
