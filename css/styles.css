@@ -27,7 +27,6 @@ header {
   padding: 30px;
   display: flex;
   align-items: center;
-  font-size: 35px;
   color: white;
   /* background gradient done with https://www.css-gradient.com/ */
   background: #03B2DD;
@@ -56,10 +55,6 @@ header {
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
-.header-text {
-  padding: 30px;
-}
-
 .header-text h2 {
   /* text shadow adapted from https://html-css-js.com/css/generator/text-shadow/ */
   color: #e0dfdc;
@@ -69,7 +64,6 @@ header {
 
 .header-text p {
   font-weight: bold;
-  letter-spacing: .3em;
   animation: blinkingText 2.5s infinite;
 }
 
@@ -83,10 +77,6 @@ header {
   66%{ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18; }
   /* back to orangered */
   100%{   text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500, 0 0 55px #ff4500, 0 0 75px #ff4500;    }
-}
-
-.location {
-  font-size: 50%;
 }
 
 /* =================================================
@@ -138,7 +128,7 @@ main {
 }
 
 .about {
-  padding-top: 40px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,15 +141,18 @@ main {
 }
 
 h3 {
-  font-size: 250%;
+  font-size: 150%;
   color: #333333;
   text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
 }
 
+.about h3 {
+  margin-bottom: 0;
+}
+
 .about p {
   line-height: 2;
-  padding: 0 40px;
-  font-size: 150%;
+  padding: 0 20px;
 }
 
 .about a {
@@ -196,7 +189,7 @@ h3 {
 ==================================================== */
 
 .projects {
-  padding-top: 50px;
+  padding-top: 30px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -233,13 +226,6 @@ h3 {
   opacity: 0;
   background: #000;
   color: #fff;
-  transition: transform .875s ease-out;
-  transform: translateY(100%);
-}
-
-.image-container:hover .overlay {
-  opacity: .7;
-  transform: translateY(0);
 }
 
 .more-info {
@@ -250,7 +236,6 @@ h3 {
   font-weight: bold;
   /* text shadow from  https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
   text-shadow: 0 0 10px #FFFFFF;
-
 }
 
 .text-container {
@@ -289,11 +274,6 @@ h3 {
   font-weight: bold;
 }
 
-.project-button:hover {
-  background-color: #ff1493;
-  transition-duration: .875s;
-}
-
 .biosecurity-image {
   background-image: url("../images/biosecurity.jpg");
   background-size: cover;
@@ -305,7 +285,12 @@ h3 {
 }
 
 .project1 button {
-  background-color: #4682b4
+  background-color: #4682b4;
+}
+
+.project1 button:hover {
+  background-color: #00ced1;
+  transition-duration: .875s;
 }
 
 .project1 button:hover {
@@ -400,6 +385,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  padding-top: 30px;
   margin-bottom: 70px;
   /*  shadow effect #87 at https://getcssscan.com/css-box-shadow-examples */
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -407,31 +393,29 @@ h3 {
 
 .icon-container {
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
+  display: block;
   width: 60%;
-  max-height: 50px;
   margin: 20px;
   padding: 0;
 
 }
 
-#github {
-max-height: 50px;
-transition: transform .4s ease-out;
-}
-
-#github:hover {
-  transform: scale(1.2);
-}
-
-#linkedin {
+.icon {
   max-height: 50px;
-  transition: transform .4s;
+  transition: transform .4s ease-out;
 }
 
-#linkedin:hover {
-  transform: scale(1.2);
+.icon:hover {
+  transform: scale(1.1);
+
+}
+
+.icon-gh {
+  float: left;
+}
+
+.icon-li {
+  float: right;
 }
 
 .form {
@@ -520,17 +504,41 @@ footer a:hover {
 
 @media (min-width: 768px) {
 
-  main {
-    padding: 5em;
-  }
-
   .header-content {
     display: flex;
     flex-direction: row;
+
   }
 
   .profile-pic {
     display: block;
+    margin-right: 10px;
+  }
+
+  .header-text {
+    margin-left: 10px;
+    font-size: 150%;
+  }
+
+  .location {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 5em;
+  }
+
+  h3 {
+    font-size: 200%;
+  }
+
+  .about {
+    padding: 30px;
+  }
+
+  .about p {
+    font-size: 120%;
+
   }
 
   .project-container {
@@ -545,6 +553,15 @@ footer a:hover {
 }
 
 @media (min-width: 992px) {
+
+  .header-text {
+    margin-left: 10px;
+    font-size: 200%;
+  }
+
+  .about {
+    padding: 30px 50px;
+  }
 
   .project-container {
     flex-direction: row-reverse;
@@ -567,10 +584,12 @@ footer a:hover {
 
   .overlay {
     transform: translateX(-100%);
+    transition: transform .875s ease-out;
   }
 
   .image-container:hover .overlay {
     transform: translateX(0);
+    opacity: .7;
   }
 
   .more-info {
