@@ -28,11 +28,12 @@ header {
   display: flex;
   align-items: center;
   color: white;
+  box-shadow: inset 0 0 10px #000;
   /* background gradient done with https://www.css-gradient.com/ */
-  background: #03B2DD;
-  background: -webkit-linear-gradient(bottom, #03B2DD, #9E6912);
-  background: -moz-linear-gradient(bottom, #03B2DD, #9E6912);
-  background: linear-gradient(to top, #03B2DD, #9E6912);
+  background: #F0F8FF;
+  background: -webkit-linear-gradient(top, #F0F8FF, #6495ED);
+  background: -moz-linear-gradient(top, #F0F8FF, #6495ED);
+  background: linear-gradient(to bottom, #F0F8FF, #6495ED);
 }
 
 .header-content {
@@ -44,40 +45,32 @@ header {
   max-width: 1200px;
 }
 
-.profile-pic {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  display: none;
-  transition: transform .4s;
-  /* shadow effect from https://html-css-js.com/css/generator/box-shadow/ */
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-
 .header-text h2 {
-  /* text shadow adapted from https://html-css-js.com/css/generator/text-shadow/ */
-  color: #e0dfdc;
+  color: #cd5c5c;
   letter-spacing: .1em;
-  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+  /* text shadow adapted from https://html-css-js.com/css/generator/text-shadow/ */
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020;
 }
 
 .header-text p {
   font-weight: bold;
-  animation: blinkingText 2.5s infinite;
+  font-variant: small-caps;
+  color: #f08080;
+  text-shadow: -1px -1px 1px #ffffe0, 2px 2px 1px #ffffe0;
+  /* animation: blinkingText 2.5s infinite; */
 }
 
-/* text shadow adapted from https://html-css-js.com/css/generator/text-shadow/ */
-@keyframes blinkingText{
-  /* orangered color */
-  0%{     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500, 0 0 55px #ff4500, 0 0 75px #ff4500;    }
-  /* vegas color */
-  33%{    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px }
-  /* neon green color */
-  66%{ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18; }
-  /* back to orangered */
-  100%{   text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500, 0 0 55px #ff4500, 0 0 75px #ff4500;    }
+.location {
+  font-weight: bold;
 }
+
+/* text shadow adapted from https://html-css-js.com/css/generator/text-shadow/ turned off because they are a bit over the top */
+/* @keyframes blinkingText{
+  0%{ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500, 0 0 55px #ff4500, 0 0 75px #ff4500;    }
+  33%{ text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px }
+  66%{ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18; }
+  100%{ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff4500, 0 0 30px #ff4500, 0 0 40px #ff4500, 0 0 55px #ff4500, 0 0 75px #ff4500;    }
+} */
 
 /* =================================================
   navigation styles
@@ -142,8 +135,9 @@ main {
 
 h3 {
   font-size: 150%;
-  color: #333333;
-  text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+  color: #333;
+  /* text shadow adapted from  https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 5px 5px 5px rgba(0,0,0,.5);
 }
 
 .about h3 {
@@ -181,7 +175,6 @@ h3 {
 
 .js {
   color: #00bfff;
-  cursor: pointer;
 }
 
 /* =================================================
@@ -215,6 +208,11 @@ h3 {
   overflow: hidden;
   /*  shadow effect #30 at https://getcssscan.com/css-box-shadow-examples */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: transform .4s;
+}
+
+.image-container:hover {
+  transform: scale(1.02);
 }
 
 .overlay {
@@ -223,9 +221,11 @@ h3 {
 	justify-content: center;
   align-items: center;
   height: inherit;
-  opacity: 0;
   background: #000;
   color: #fff;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform .875s ease-out;
 }
 
 .more-info {
@@ -234,8 +234,7 @@ h3 {
   line-height: 1.5;
   font-size: 18px;
   font-weight: bold;
-  /* text shadow from  https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
-  text-shadow: 0 0 10px #FFFFFF;
+  text-shadow: 0 0 10px #fff;
 }
 
 .text-container {
@@ -397,7 +396,6 @@ h3 {
   width: 60%;
   margin: 20px;
   padding: 0;
-
 }
 
 .icon {
@@ -407,7 +405,6 @@ h3 {
 
 .icon:hover {
   transform: scale(1.1);
-
 }
 
 .icon-gh {
@@ -477,24 +474,24 @@ footer {
   background-color: #777;
   padding: 20px;
   text-align: center;
-  color: white;
   position: absolute;
   bottom: 0;
   width: 100%;
+  box-shadow: inset 0 0 10px #000;
   /* background gradient done with https://www.css-gradient.com/ */
-  background: #03B2DD;
-  background: -webkit-linear-gradient(bottom, #9E6912, #03B2DD);
-  background: -moz-linear-gradient(bottom, #9E6912, #03B2DD);
-  background: linear-gradient(to top, #9E6912, #03B2DD);
+  background: #F0F8FF;
+  background: -webkit-linear-gradient(top, #6495ED, #F0F8FF);
+  background: -moz-linear-gradient(top, #6495ED, #F0F8FF);
+  background: linear-gradient(to bottom, #6495ED, #F0F8FF);
 }
 
 footer a {
   font-weight: bold;
-  color: #fffafa;
+  color: #a0522d;
 }
 
 footer a:hover {
-  color: #8b008b;
+  color: #9400d3;
   transition-duration: .875s;
 }
 
@@ -507,12 +504,6 @@ footer a:hover {
   .header-content {
     display: flex;
     flex-direction: row;
-
-  }
-
-  .profile-pic {
-    display: block;
-    margin-right: 10px;
   }
 
   .header-text {
@@ -538,7 +529,6 @@ footer a:hover {
 
   .about p {
     font-size: 120%;
-
   }
 
   .project-container {
@@ -580,16 +570,6 @@ footer a:hover {
   .image-container {
     width: 60%;
     height: 400px;
-  }
-
-  .overlay {
-    transform: translateX(-100%);
-    transition: transform .875s ease-out;
-  }
-
-  .image-container:hover .overlay {
-    transform: translateX(0);
-    opacity: .7;
   }
 
   .more-info {

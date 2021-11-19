@@ -25,9 +25,34 @@ window.onload = function() {
     });
 };
 
-// Javascript click event demo
-const js = document.querySelector('.js');
+//display and hide more info overlay for each project
+moreInfoBtns = document.querySelectorAll('.more-info-button');
 
-js.addEventListener('click', () => {
-  alert('Yah! This alert message is trigged by an event using Javascript.');
-});
+for (let i = 0; i < moreInfoBtns.length; i++) {
+  moreInfoBtns[i].addEventListener('click', e => {
+    const button = e.target;
+    const overlays = document.querySelectorAll('.overlay');
+
+    if (button.value === 'hidden') {
+      button.value = 'displayed';
+      button.textContent = 'Hide Info';
+
+      for (let i = 0; i < overlays.length; i++) {
+        if (overlays[i].title === button.title) {
+          overlays[i].style.opacity = '.7';
+          overlays[i].style.transform = 'translateX(0)';
+        }
+      }
+    } else if (button.value === 'displayed') {
+      button.value = 'hidden';
+      button.textContent = 'More Info';
+
+      for (let i = 0; i < overlays.length; i++) {
+        if (overlays[i].title === button.title) {
+          overlays[i].style.opacity = '.7';
+          overlays[i].style.transform = 'translateX(-100%)';
+        }
+      }
+    }
+  });
+}
