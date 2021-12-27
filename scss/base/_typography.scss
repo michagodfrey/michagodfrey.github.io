@@ -1,0 +1,92 @@
+// ============================================= 
+//              Base styles                      
+// ============================================= 
+
+* {
+  font-family: $font-stack-primary;
+  color: $color-text;
+  box-sizing: border-box;
+  
+}
+
+p {
+  line-height: 1.45em;
+  padding: 0 10px;
+  margin: 0;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: $color-text;
+}
+
+h4 {
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+// ============================================= 
+//              Typography                       
+// ============================================= 
+
+.headline-primary {
+  color: $color-primary; 
+}
+
+.headline-secondary {
+  font-weight: 700;
+  color: $color-primary;
+  padding: 0 10px;
+}
+
+.headline-section {
+  color: $color-primary;
+  margin-left: 10px;
+}
+
+.name-title {
+  display: block;
+  font-weight: 700;
+}
+
+.text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.in-text-link {
+  color: $color-primary;
+  &:visited {
+    color: $color-link-visited;
+  }
+}
+
+.blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 8px solid $color-primary;
+  border-radius: 5px;
+}
+
+// add on styles
+
+.text-primary-color {
+  color: $color-primary;
+}
+
+.text-secondary-color {
+  color: $color-secondary;
+}
+
+.background-primary-color {
+  background-color: $color-primary;
+}
+
+.background-secondary-color {
+  background-color: $color-secondary;
+}
