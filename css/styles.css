@@ -853,10 +853,6 @@ template {
   flex-direction: column;
 }
 
-#more-info {
-  display: none;
-}
-
 .project {
   margin: 5px auto;
   position: relative;
@@ -906,10 +902,9 @@ template {
   padding-bottom: 15px;
   background: #FFD662FF;
   border-radius: 10px;
-  width: 60%;
+  width: 90%;
   transform: translateY(-25%);
   position: absolute;
-  left: 20%;
   margin-bottom: 50px;
 }
 
