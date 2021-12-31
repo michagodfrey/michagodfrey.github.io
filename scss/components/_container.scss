@@ -6,7 +6,6 @@
 .header {
   display: flex;
   justify-content: space-between;
-  // background-color: $color-primary;
 }
 
 .header-contact {
@@ -25,7 +24,9 @@
   padding: 10px;
   position: relative;
   background-color: $color-secondary;
+  border: solid 1px $color-primary;
   border-radius: 5px 50px 5px 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
   z-index: -1;
 }
 
@@ -42,7 +43,8 @@
   margin: -10px 0 5px 0;
   padding: 5px;
   border-radius: 5px;
-  z-index: 2;
+  z-index: 1;
+  grid-column: 1/3;
 }
 
 // about container
@@ -55,6 +57,8 @@
 .project {
   margin: 5px auto;
   position: relative;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
 }
 
 .flex-container {
@@ -73,7 +77,7 @@
   height: 100%;
   position: absolute;
   opacity: 0;
-  border: 1px solid #000;
+  border: 3px solid $color-secondary;
   border-radius: 5%;
   background: $color-primary;
   color: $color-secondary;
@@ -91,6 +95,8 @@
   margin-top: 100px;
   display: flex;
   justify-content: center;
+  border-radius: 10px 10px 0 0;
+  box-shadow: inset 0 0 10px 10px rgba(0, 10, 10, .4);
 }
 
 .contact-container {
@@ -105,7 +111,7 @@
   transform: translateY(-25%);
   position: absolute;
   margin-bottom: 50px;
-
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px
 }
 
 .icon {
@@ -114,7 +120,7 @@
   &:hover .outer-shape {
     fill: #777;
   }
-  }
+}
 
 // add on styles
 
@@ -139,6 +145,14 @@
   margin-bottom: 15px;
 }
 
-.mt-neg15 {
-  margin-top: -15px;
+.mt-reduce-20 {
+  margin-top: -20px;
+}
+
+.mt-reduce-30 {
+  margin-top: -30px;
+}
+
+.mw-1200 {
+  max-width: 1200px;
 }

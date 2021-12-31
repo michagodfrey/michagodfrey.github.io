@@ -55,6 +55,10 @@ h4 {
   color: #422057FF;
 }
 
+.project-text {
+  margin: 0 5px 10px 5px;
+}
+
 .blockquote {
   font-size: 1.5em;
   font-weight: 300;
@@ -582,7 +586,8 @@ template {
 .img-profile {
   grid-area: img;
   border-radius: 5px 5px 5px 30px;
-  z-index: 1;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+  z-index: 2;
 }
 
 .img-frame {
@@ -672,10 +677,11 @@ template {
   display: flex;
   flex-direction: column;
   background: #FFD662FF;
+  border: solid 1px #00539CFF;
   border-radius: 10px;
   width: 100%;
   padding: 10px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
 }
 
 .input {
@@ -685,6 +691,7 @@ template {
   border: solid 1px #696969;
   border-radius: 10px;
   padding: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .textarea {
@@ -692,7 +699,7 @@ template {
   margin-bottom: 15px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 660px) {
   .container {
     max-width: 1400px;
     display: block;
@@ -782,8 +789,10 @@ template {
   }
   .subtitle {
     text-align: right;
+    align-self: start;
     position: absolute;
-    transform: translateX(-50%) translateY(50%);
+    left: -1.5em;
+    width: calc(100% + 1.5em);
   }
   #more-info {
     flex-direction: row;
@@ -828,7 +837,9 @@ template {
   padding: 10px;
   position: relative;
   background-color: #FFD662FF;
+  border: solid 1px #00539CFF;
   border-radius: 5px 50px 5px 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
   z-index: -1;
 }
 
@@ -845,7 +856,8 @@ template {
   margin: -10px 0 5px 0;
   padding: 5px;
   border-radius: 5px;
-  z-index: 2;
+  z-index: 1;
+  grid-column: 1/3;
 }
 
 .about {
@@ -856,6 +868,8 @@ template {
 .project {
   margin: 5px auto;
   position: relative;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
 }
 
 .flex-container {
@@ -874,7 +888,7 @@ template {
   height: 100%;
   position: absolute;
   opacity: 0;
-  border: 1px solid #000;
+  border: 3px solid #FFD662FF;
   border-radius: 5%;
   background: #00539CFF;
   color: #FFD662FF;
@@ -892,6 +906,8 @@ template {
   margin-top: 100px;
   display: flex;
   justify-content: center;
+  border-radius: 10px 10px 0 0;
+  box-shadow: inset 0 0 10px 10px rgba(0, 10, 10, 0.4);
 }
 
 .contact-container {
@@ -906,6 +922,7 @@ template {
   transform: translateY(-25%);
   position: absolute;
   margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
 }
 
 .icon {
@@ -938,7 +955,15 @@ template {
   margin-bottom: 15px;
 }
 
-.mt-neg15 {
-  margin-top: -15px;
+.mt-reduce-20 {
+  margin-top: -20px;
+}
+
+.mt-reduce-30 {
+  margin-top: -30px;
+}
+
+.mw-1200 {
+  max-width: 1200px;
 }
 /*# sourceMappingURL=styles.css.map */
