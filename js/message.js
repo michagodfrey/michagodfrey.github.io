@@ -20,6 +20,7 @@ window.onload = function() {
                   location.href = "index.html";
               },  function(error) {
                   alert('Well this is embarrassing :( Sorry about that. Please contact me through social media instead.', error);
+                  loading.style.display = "none";
                   location.href = "index.html";
               });
         }

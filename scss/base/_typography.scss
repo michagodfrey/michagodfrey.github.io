@@ -6,7 +6,10 @@
   font-family: $font-stack-primary;
   color: $color-text;
   box-sizing: border-box;
-  
+}
+
+body {
+  background-color: $color-tertiary;
 }
 
 p {
