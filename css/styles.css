@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #d3f1f5;
+  background-color: #f2f3f4;
 }
 
 p {
@@ -612,6 +612,14 @@ template {
   max-height: 50px;
 }
 
+.outer-shape {
+  fill: #000;
+}
+
+.inner-shape {
+  fill: white;
+}
+
 .container {
   padding: 0;
 }
@@ -830,21 +838,15 @@ template {
   .input, .textarea {
     width: 60%;
   }
+  .header {
+    margin: 0 auto;
+  }
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-}
-
-.header-contact {
-  display: flex;
-  justify-content: end;
-  margin-bottom: -15px;
-}
-
-.logo {
-  height: 50px;
+  max-width: 1440px;
 }
 
 .intro {
@@ -881,6 +883,7 @@ template {
 }
 
 .project {
+  max-width: 380px;
   margin: 5px auto;
   position: relative;
   border-radius: 5%;
@@ -908,7 +911,7 @@ template {
   background: #00539CFF;
   color: #FFD662FF;
   transform: translateY(-100%);
-  transition: opacity .3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 
 .overlay:hover {
@@ -921,7 +924,6 @@ template {
   margin-top: 100px;
   display: flex;
   justify-content: center;
-  border-radius: 10px 10px 0 0;
   box-shadow: inset 0 0 10px 10px rgba(0, 10, 10, 0.4);
 }
 
@@ -934,19 +936,52 @@ template {
   background: #FFD662FF;
   border-radius: 10px;
   width: 90%;
+  max-width: 760px;
   transform: translateY(-25%);
   position: absolute;
   margin-bottom: 50px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
 }
 
-.icon {
+.icon-container {
   margin: 140px 20px 40px 20px;
-  transition: fill .25s ease-out;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon {
+  margin: 0 20px;
+  transition: fill 0.25s ease-out;
 }
 
 .icon:hover .outer-shape {
-  fill: #777;
+  fill: #fff;
+}
+
+.icon:hover .inner-shape {
+  fill: #000;
+}
+
+.header-contact {
+  display: flex;
+  justify-content: end;
+  margin-bottom: -15px;
+}
+
+.contact-social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #d3f1f5;
+  border: solid 5px #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+}
+
+.icon-container-contact {
+  margin: 40px 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .flex-column {
