@@ -613,10 +613,6 @@ template {
   cursor: pointer;
 }
 
-.test-z {
-  z-index: 10;
-}
-
 .outer-shape {
   fill: #000;
 }
