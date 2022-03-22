@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <script src="js/app.js" defer></script>
-    <title>MG's Front End Showcase</title>
+    <title>MG's Web Showcase</title>
   </head>
 
   <body>
@@ -29,11 +29,11 @@
           <div class="dropdown-menu information-grid">
             <div>
               <div class="dropdown-links">
-                <a href="#about" class="link">About me</a>
-                <a href="#projects" class="link">Project</a>
-                <a href="#contact" class="link">Contact</a>
+                <a href="#about" class="link">About</a>
+                <a href="#projects" class="link">Projects</a>
                 <a
                   href="https://docs.google.com/document/d/1R4C74Jm3oEx9XqhsnJkh-p3EUgEsXVTr/edit?usp=sharing&ouid=112309810791255870080&rtpof=true&sd=true"
+                  target="_blank"
                   class="link"
                   >Resume</a
                 >
@@ -46,10 +46,10 @@
         <div class="nav">
           <a class="nav-link" href="#about">About</a>
           <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#contact">Contact</a>
           <a
             class="nav-link"
             href="https://docs.google.com/document/d/1R4C74Jm3oEx9XqhsnJkh-p3EUgEsXVTr/edit?usp=sharing&ouid=112309810791255870080&rtpof=true&sd=true"
+            target="_blank"
             >Resume</a
           >
         </div>
@@ -67,7 +67,7 @@
                 >Michael Godfrey</strong
               >
             </h1>
-            <div class="subtitle">Front-end Delevoper</div>
+            <div class="subtitle">Web Developer</div>
             <img
               src="images/michael-godfrey.jpg"
               class="img-profile"
@@ -77,272 +77,8 @@
         </div>
       </div>
 
-      <!-- about section -->
-      <div id="about" class="row">
-        <div class="col-12 centered flex-column">
-          <h2 class="headline-secondary">About</h2>
-          <p class="text mb-15">
-            Welcome and thank you for visiting my portfolio page. Here are some
-            projects I have made in my spare time as well as contact and social
-            media links. I invite you to browse this page and the pages it links
-            to, I welcome any feedback as this is a learning process. If you
-            would like to discuss something we can work on, please reach out
-            with the 'Let's Talk' button or find me on social media.
-          </p>
-          <span
-            id="toggle-hide-show"
-            onclick="hideShow()"
-            class="hide-show-btn headline-secondary"
-            >Show More &darr;</span
-          >
-
-          <!-- hidden dropdown area -->
-          <!-- style="display: none" put this in div with id-"more-info"-->
-          <div id="more-info" class="col-12 flex-start flex-column hide">
-            <div class="col-6 flex-column">
-            <h2 class="headline-secondary">What can I do?</h2>
-            <p class="text">
-              I can use HTML, CSS and Javascript to build web pages. In 2021 I
-              completed a front end development course by
-              <a
-                class="in-text-link"
-                href="https://teamtreehouse.com/techdegree"
-                target="_blank"
-                >Treehouse</a
-              >
-              where I created 9 projects for assessment as well as passing an
-              exam. Prior, I completed projects 0 - 8 in
-              <a
-                class="in-text-link"
-                href="https://cs50.harvard.edu/x/2020/"
-                target="_blank"
-                >CS50x</a
-              >
-              in 2020 where I learned some computer science fundamentals.
-            </p>
-          </div>
-
-          <div class="col-6 flex-column">
-            <h2 class="headline-secondary">Who am I?</h2>
-            <p class="text">
-              I live in Melbourne, Australia and I am seeking a career change
-              to web developer. This is because I like solving problems and
-              creating new things. I display my work on social media and take
-              on challenges such as
-              <a
-                class="in-text-link"
-                href="https://www.100daysofcode.com/"
-                target="_blank"
-                >#100DaysOfCode</a
-              >. My goal is to find exciting projects to work on and seek new
-              horizons.
-            </p>
-          </div>
-
-          </div> 
-        </div>
-      </div>
-
-      <!-- start project containers -->
-      <h2 id="projects" class="headline-section">Projects</h2>
-
-      <div class="row">
-        <div class="col-12 flex-container">
-          <div class="project">
-            <img
-              src="images/biosecurity.jpg"
-              alt="biosecurity tips"
-              class="img-frame"
-            />
-            <div class="overlay">
-              <h4>Biosecurity Tips</h4>
-              <p class="project-text">
-                Information about quarantine rules for organic products in
-                Australia.
-              </p>
-              <a
-                href="https://michagodfrey.github.io/biosecurity-tips/"
-                target="_blank"
-                class="btn info project-btn"
-                >Open Project</a
-              >
-              <a
-                href="https://github.com/michagodfrey/biosecurity-tips/tree/gh-pages"
-                target="_blank"
-                class="btn info project-btn"
-                >View Code</a
-              >
-            </div>
-          </div>
-
-          <div class="project">
-            <img src="images/fire-ants.jpg" alt="fire ants" class="img-frame" />
-            <div class="overlay">
-              <h4>Red Imported Fire Ants</h4>
-              <p class="project-text">
-                An information page about the invasive ant species.
-              </p>
-              <a
-                href="https://michagodfrey.github.io/fire-ants/"
-                target="_blank"
-                class="btn info project-btn"
-                >Open Project</a
-              >
-              <a
-                href="https://github.com/michagodfrey/fire-ants/tree/gh-pages"
-                target="_blank"
-                class="btn info project-btn"
-                >View Code</a
-              >
-            </div>
-          </div>
-
-          <div class="project">
-            <img
-              src="images/treatment.jpg"
-              alt="treatment chart"
-              class="img-frame"
-            />
-            <div class="overlay">
-              <h4>Chemical Treatment Chart</h4>
-              <p class="project-text">
-                A form to calculate chemical rates and save them to a PDF.
-              </p>
-              <a
-                href="https://michagodfrey.github.io/treatment-prep-chart-generator/"
-                target="_blank"
-                class="btn info project-btn"
-                >Open Project</a
-              >
-              <a
-                href="https://github.com/michagodfrey/treatment-prep-chart-generator/tree/gh-pages"
-                target="_blank"
-                class="btn info project-btn"
-                >View Code</a
-              >
-            </div>
-          </div>
-
-          <div class="project">
-            <img
-              src="images/fiji.jpg"
-              alt="Fiji life website"
-              class="img-frame"
-            />
-            <div class="overlay">
-              <h4>Fiji Life</h4>
-              <p class="project-text">
-                A page to record progress of two retirees living in Fiji.
-              </p>
-              <a
-                href="https://michagodfrey.github.io/fiji"
-                target="_blank"
-                class="btn info project-btn"
-                >Open Project</a
-              >
-              <a
-                href="https://github.com/michagodfrey/fiji/tree/gh-pages"
-                target="_blank"
-                class="btn info project-btn"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Treehouse projects-->
-      <h2 class="headline-section">Treehouse TechDegree Projects</h2>
-      <div class="row">
-        <div class="col-12 flex-container">
-          <div class="project">
-            <img
-              src="images/phrase-game.jpg"
-              alt="phrase guessing game"
-              class="img-frame"
-            />
-            <div class="overlay">
-              <h4>Phrase Guessing Game</h4>
-              <p class="project-text">Using javascript to manipulate strings</p>
-              <a
-                href="https://michagodfrey.github.io/phrase-guessing-game/"
-                target="_blank"
-                class="btn info project-btn"
-                >Open Project</a
-              >
-              <a
-                href="https://github.com/michagodfrey/phrase-guessing-game/tree/gh-pages"
-                target="_blank"
-                class="btn info project-btn"
-                >View Code</a
-              >
-            </div>
-          </div>
-
-          <div class="project">
-            <img
-              src="images/directory.jpg"
-              alt="employee directory"
-              class="img-frame"
-            />
-            <div class="overlay">
-              <h4>Employee Directory</h4>
-              <p class="project-text">Displaying data with an API</p>
-              <a
-                href="https://michagodfrey.github.io/employee-directory/"
-                target="_blank"
-                class="btn info project-btn"
-                >Open Project</a
-              >
-              <a
-                href="https://github.com/michagodfrey/employee-directory/tree/gh-pages"
-                target="_blank"
-                class="btn info project-btn"
-                >View Code</a
-              >
-            </div>
-          </div>
-
-          <div class="project">
-            <img
-              src="images/dashboard.jpg"
-              alt="dashboard mockup"
-              class="img-frame"
-            />
-            <div class="overlay">
-              <h4>Dashboard</h4>
-              <p class="project-text">A mockup of a web app dashboard</p>
-              <a
-                href="https://michagodfrey.github.io/dashboard/"
-                target="_blank"
-                class="btn info project-btn"
-                >Open Project</a
-              >
-              <a
-                href="https://github.com/michagodfrey/dashboard/tree/gh-pages"
-                target="_blank"
-                class="btn info project-btn"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end project containers -->
-    </main>
-
-    <!-- footer -->
-
-    <footer id="contact" class="footer">
-      <!-- Contact me call to action -->
-
-      <div class="contact-container">
-        <h3 class="headline-secondary">
-          Want to talk? I'd be happy to! Message me here or find me on social
-          media.
-        </h3>
-        <a class="btn default" href="contact.html">Let's Talk</a>
-        <!-- SVG social media links -->
+      <!-- SVG social media links -->
+       <h2 class="headline-secondary text-center">Social Media</h2>
         <div class="icon-container">
           <a href="https://github.com/michagodfrey" target="_blank">
             <svg
@@ -393,9 +129,320 @@
           </a>
         </div>
 
-      
-        
+        <hr>
+      <!-- about section -->
+      <div id="about" class="row">
+        <div class="col-12 centered flex-column">
+          <h2 class="headline-secondary">About me</h2>
+          <p class="text text--about">
+            Welcome and thank you for visiting this page. I am a web enthusiast and 
+            here are some web projects I have made with <em>HTML, CSS and Sass, Javascript 
+            and React</em>. 
+          </p>
+          <p class="text text--about">
+            I am open to feedback about the projects here or discussing things we can work on.
+            Just reach out with the 'Let's Talk' button or find me on social media.
+          </p>
+          <span
+            id="toggle-hide-show"
+            onclick="hideShow()"
+            class="hide-show-btn headline-secondary"
+            >Show More &darr;</span
+          >
+
+          <!-- hidden dropdown area -->
+          <div id="more-info" class="col-12 flex-start flex-column hide">
+
+            <div class="col-6 flex-column">
+            <h2 class="headline-secondary">Who am I?</h2>
+            <p class="text">
+              I am Australian, living in greater Melbourne. Right now I work in 
+              plant biosecurity and one of the projects here is related to that.
+              Previously I have been an English language teacher and an infantryman in the
+              Australian army. I have a life-long learning mentality - recently 
+              I discoverd coding and web development and have been learning ever since. 
+            </p>
+          </div>
+
+            <div class="col-6 flex-column">
+            <h2 class="headline-secondary">My coding journey</h2>
+            <p class="text">
+              I started learning about web development while I was looking for 
+              an indoor pastime during the Covid lockdowns. I found I enjoyed 
+              creating web pages so In 2021 I completed a front end development 
+              course by
+              <a
+                class="in-text-link"
+                href="https://teamtreehouse.com/techdegree"
+                target="_blank"
+                >Treehouse</a
+              >
+              where I created 9 projects for assessment as well as passing an
+              exam. From there, I have continued developing through the 
+              <a
+                class="in-text-link"
+                href="https://www.100daysofcode.com/"
+                target="_blank"
+                >#100DaysOfCode</a
+              > 
+              challenge by building in public.
+            </p>
+          </div>
+
+          </div> 
+        </div>
       </div>
+      <hr>
+      <!-- project containers -->
+      <h2 id="projects" class="headline-section text-center">My Projects</h2>
+
+        <div class="row">
+        <div class="col-12 flex-container">
+
+          <div class="project">
+            <img
+              src="images/quarantine-query.jpg"
+              alt="quarantine query"
+              class="img-frame"
+            />
+            <div class="overlay">
+              <h4>Quarantine Query</h4>
+              <p class="project-text">
+                This is a long term project that aims to give information 
+                about Australian interstate biosecurity rules. 
+              </p>
+              <p class="project-text">
+                Built with: React and Sass. 
+              </p>
+
+              <a
+                href="https://michagodfrey.github.io/attba/"
+                target="_blank"
+                class="btn info project-btn"
+                >Open Project</a
+              >
+              <a
+                href="https://github.com/michagodfrey/attba"
+                target="_blank"
+                class="btn info project-btn"
+                >View Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project">
+            <img
+              src="images/fiji.jpg"
+              alt="Fiji life website"
+              class="img-frame"
+            />
+            <div class="overlay">
+              <h4>Life in Savasavu, Fiji</h4>
+              <p class="project-text">
+                A webpage to host photos and stories for two retirees living in Fiji. 
+              </p>
+              <p class="project-text">
+                Built with: HTML and CSS.
+              </p>
+              <a
+                href="https://michagodfrey.github.io/fiji"
+                target="_blank"
+                class="btn info project-btn"
+                >Open Project</a
+              >
+              <a
+                href="https://github.com/michagodfrey/fiji/tree/gh-pages"
+                target="_blank"
+                class="btn info project-btn"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="projects" class="headline-section text-center">Front-end Mentor Challenges</h2>
+         <div class="row">
+            <div class="col-12 flex-container">
+               <div class="project">
+                  <img
+                    src="images/sunnyside.jpg"
+                    alt="sunnyside agency landing page"
+                    class="img-frame"
+                  />
+                  <div class="overlay">
+                    <h4>Sunnyside agency landing page</h4>
+                    <p class="project-text">
+                      Highly responsive and precise imitation of design.  
+                    </p>
+                    <p class="project-text">
+                      Built with: HTML, CSS, Javascript 
+                    </p>
+                    <a
+                      href="https://www.frontendmentor.io/solutions/sunnyside-landing-page-using-html-vanilla-css-and-javascript-CgHsrsnzG"
+                      target="_blank"
+                      class="btn info project-btn"
+                      >View Challenge Solution</a
+                    >
+                    <a
+                      href="https://michagodfrey.github.io/frontend-mentor-sunnyside/"
+                      target="_blank"
+                      class="btn info project-btn"
+                      >Open Project</a
+                    >
+                    <a
+                      href="https://github.com/michagodfrey/frontend-mentor-sunnyside/tree/master"
+                      target="_blank"
+                      class="btn info project-btn"
+                      >View Code</a
+                    >
+                  </div>
+                </div>
+                 
+                <div class="project">
+                  <img
+                    src="images/screenshot-jobs.jpg"
+                    alt="job listings with filtering"
+                    class="img-frame"
+                  />
+                  <div class="overlay">
+                    <h4>Jobs Listing with Filtering</h4>
+                    <p class="project-text">
+                      Jobs listing with filtering.
+                    </p>
+                    <p class="project-text">
+                      Built with: React, CSS
+                    </p>
+                    <a
+                      href="https://www.frontendmentor.io/solutions/jobs-listing-with-filtering-built-with-react-LMccYL0ca"
+                      target="_blank"
+                      class="btn info project-btn"
+                      >View Challenge Solution</a
+                    >
+                    <a
+                      href="https://michagodfrey.github.io/job-listings/"
+                      target="_blank"
+                      class="btn info project-btn"
+                      >Open Project</a
+                    >
+                    <a
+                      href="https://github.com/michagodfrey/job-listings/tree/main"
+                      target="_blank"
+                      class="btn info project-btn"
+                      >View Code</a
+                    >
+                  </div>
+                </div>
+
+                <div class="project">
+                  <img
+                    src="images/tip-calculator.jpg"
+                    alt="tip calculator"
+                    class="img-frame"
+                  />
+                  <div class="overlay">
+                    <h4>Tip calculator</h4>
+                    <p class="project-text">
+                      A tip calculator.  
+                    </p>
+                    <p class="project-text">
+                      Built with: HTML, CSS, Javascript.  
+                    </p>
+                    <a
+                      href="https://www.frontendmentor.io/solutions/tip-calculator-POtUwOBly"
+                      target="_blank"
+                      class="btn info project-btn"
+                      >View Challenge Solution</a
+                    >
+                    <a
+                      href="https://michagodfrey.github.io/frontend-mentor-tip-calculator/"
+                      target="_blank"
+                      class="btn info project-btn"
+                      >Open Project</a
+                    >
+                    <a
+                      href="https://github.com/michagodfrey/frontend-mentor-tip-calculator/tree/gh-pages"
+                      target="_blank"
+                      class="btn info project-btn"
+                      >View Code</a
+                    >
+                  </div>
+                </div>
+            </div>
+        </div>
+
+
+      <!-- Treehouse projects-->
+      <h2 class="headline-section text-center">Treehouse TechDegree Projects</h2>
+      <div class="row">
+        <div class="col-12 flex-container">
+          <div class="project">
+            <img
+              src="images/phrase-game.jpg"
+              alt="phrase guessing game"
+              class="img-frame"
+            />
+            <div class="overlay">
+              <h4>Phrase Guessing Game</h4>
+              <p class="project-text">Javascript Dom manipulation</p>
+              <p class="project-text">Built with: HTML, CSS, Javascript</p>
+              <a
+                href="https://michagodfrey.github.io/phrase-guessing-game/"
+                target="_blank"
+                class="btn info project-btn"
+                >Open Project</a
+              >
+              <a
+                href="https://github.com/michagodfrey/phrase-guessing-game/tree/gh-pages"
+                target="_blank"
+                class="btn info project-btn"
+                >View Code</a
+              >
+            </div>
+          </div>
+
+          <div class="project">
+            <img
+              src="images/directory.jpg"
+              alt="employee directory"
+              class="img-frame"
+            />
+            <div class="overlay">
+              <h4>Employee Directory</h4>
+              <p class="project-text">Fetch function and API</p>
+              <p class="project-text">Built with: HTML, CSS, Javascript</p>
+              <a
+                href="https://michagodfrey.github.io/employee-directory/"
+                target="_blank"
+                class="btn info project-btn"
+                >Open Project</a
+              >
+              <a
+                href="https://github.com/michagodfrey/employee-directory/tree/gh-pages"
+                target="_blank"
+                class="btn info project-btn"
+                >View Code</a
+              >
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- end project containers -->
+    </main>
+
+    <!-- footer -->
+
+    <footer id="contact" class="footer">
+      <!-- Contact me call to action -->
+
+      <div class="contact-container">
+        <h3 class="headline-secondary">
+          Want to talk? I'd be happy to! Message me here or find me on social
+          media.
+        </h3>
+        <a class="btn default" href="contact.html">Let's Talk</a>
     </footer>
+
   </body>
 </html>

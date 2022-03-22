@@ -10,6 +10,7 @@
 
 body {
   background-color: $color-boneWhite;
+  font-size: 16px;
 }
 
 p {
@@ -28,6 +29,12 @@ h4 {
   color: inherit;
   padding: 0;
   margin: 0;
+}
+
+hr {
+  width: 90%;
+  opacity: .5;
+  border-top: none;
 }
 
 // ============================================= 
@@ -59,6 +66,12 @@ h4 {
   text-justify: inter-word;
 }
 
+.text--about {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
 .in-text-link {
   color: $color-primary;
   &:visited {
@@ -81,6 +94,10 @@ h4 {
 }
 
 // add on styles
+
+.text-center {
+  text-align: center;
+}
 
 .text-primary-color {
   color: $color-primary;
