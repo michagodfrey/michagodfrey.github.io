@@ -1,0 +1,48 @@
+.intro {
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    background-color: $color-secondary;
+    border: solid 1px $color-primary;
+    border-radius: 5px 50px 5px 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+    z-index: -1;
+}
+
+.title {
+    grid-area: title;
+    font-weight: 300;
+}
+
+.subtitle {
+    grid-area: subtitle;
+    background-color: $color-primary;
+    color: $color-secondary;
+    font-size: 24px;
+    margin: -10px 0 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+    grid-column: 1/3;
+}
+
+@media (min-width: $break-m) {
+
+    .intro {
+        display: grid;
+        width: min-content;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    
+    .subtitle {
+        text-align: right;
+        align-self: start;
+        position: absolute;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
+}

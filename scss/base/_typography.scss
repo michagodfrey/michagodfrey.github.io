@@ -1,17 +1,3 @@
-// ============================================= 
-//              Base styles                      
-// ============================================= 
-
-* {
-  font-family: $font-stack-primary;
-  color: $color-text;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: $color-boneWhite;
-  font-size: 16px;
-}
 
 p {
   line-height: 1.45em;
@@ -61,36 +47,8 @@ hr {
   font-weight: 700;
 }
 
-.text {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.text--about {
-  font-size: 1.25rem;
-  max-width: 800px;
-  margin-bottom: 2rem;
-}
-
-.in-text-link {
-  color: $color-primary;
-  &:visited {
-    color: $color-link-visited;
-  }
-}
-
 .project-text {
   margin: 0 5px 10px 5px;
-}
-
-.blockquote {
-  font-size: 1.5em;
-  font-weight: 300;
-  font-style: italic;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 8px solid $color-primary;
-  border-radius: 5px;
 }
 
 // add on styles

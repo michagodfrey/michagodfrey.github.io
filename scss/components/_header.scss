@@ -1,0 +1,119 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+// social media icons and intrapage links
+
+.link-container {
+    display: none;
+    align-items: center;
+    align-content: stretch;
+}
+
+// dropdown menu for mobile devices
+
+.dropdown {
+    position: relative;
+    margin: auto 0;
+    z-index: 1;
+}
+
+.link {
+    background: none;
+    border: none;
+    color: $color-text;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.dropdown.active>.link,
+.link:hover {
+    color: black;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + .25rem);
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active>.link+.dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.information-grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+// intra page links for wider screens
+
+.nav {
+    padding-left: 0;
+    display: none;
+
+    &-link {
+        text-align: center;
+        padding: 10px 20px;
+        display: block;
+        width: fit-content;
+        transition:
+            color .2s ease-in-out;
+        font-size: 1.25rem;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+// media queries
+
+@media (min-width: $break-m) {
+
+    .dropdown {
+        display: none;
+    }
+    
+    .link-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (min-width: $break-l) {
+
+    
+
+    .nav {
+        // display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+}

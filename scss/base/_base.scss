@@ -1,0 +1,31 @@
+* {
+    font-family: $font-stack-primary;
+    color: $color-text;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-boneWhite;
+    font-size: 16px;
+}
+
+main {
+    padding: 0;
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+// ============================================= 
+//              add on styles                      
+// ============================================= 
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-start {
+    align-items: flex-start;
+}

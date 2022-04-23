@@ -4,20 +4,33 @@
 
 .btn {
   text-align: center;
-  color: #fff;
+  font-weight: bolder;
+  color: $color-primary;
   border: none;
-  padding: 10px;
+  padding: 1rem;
+  margin: .5rem;
   text-transform: uppercase;
-  min-width: 140px;
-  max-width: 280px;
-  margin: 0 auto;
+  min-width: 120px;
+  max-width: 50%;
   border-radius: 50px;
+  cursor: pointer;
   &:hover {
     transition-duration: .2s;
   }
 }
 
+.primary {
+  border: 1px solid $color-primary;
+  background-color: $color-secondary;
+  &:hover {
+    background-color: #ffde81;
+  }
+}
+
+// button color stules
+
 .default {
+  color: $color-boneWhite;
   background-color: $color-button-default;
   &:hover {
     background-color: lighten($color-button-default, 15%);
@@ -25,6 +38,7 @@
 }
 
 .error {
+  color: $color-boneWhite;
   background-color: $color-button-error;
   &:hover {
     background-color: lighten($color-button-error, 15%);
@@ -32,6 +46,7 @@
 }
 
 .info {
+  color: $color-boneWhite;
   background-color: $color-button-info;
   &:hover {
     background-color: lighten($color-button-info, 15%);
@@ -39,6 +54,7 @@
 }
 
 .success {
+  color: $color-boneWhite;
   background-color: $color-button-success;
   &:hover {
     background-color: lighten($color-button-success, 15%);
@@ -52,34 +68,12 @@
   }
 }
 
-.close-btn {
-  text-align: center;
-  width: 100px;
-  border-radius: 10px;
-  padding: 10px;
+// button add on classes
+
+.centered {
   display: block;
-  color: #fff;
-  // margin-bottom: -30px;
-  background-color: $color-button-error;
-  transition: background-color .2s ease-in-out,
-  color .2s ease-in-out;
-
-  &:hover {
-    background-color: lighten($color-button-error, 15%);
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.project-btn {
-  margin: 5px;
-  padding: 5px;
-}
-
-.hide-show-btn {
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 3;
-  &:hover {
-    color: $color-button-warning;
-  }
-}
 

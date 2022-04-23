@@ -1,0 +1,57 @@
+// =============================================
+//              Images
+// =============================================
+
+.img-profile {
+  grid-area: img;
+  border-radius: 5px 5px 5px 30px;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+@media (min-width: $break-m) {
+
+  .img-profile {
+    border-radius: 5px;
+  }
+}
+
+.img-frame {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 500px;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+}
+
+// =============================================
+//              Svgs
+// =============================================
+
+.svg-large {
+  max-width: 50px;
+  margin: 1rem;
+  &:hover .outer-shape {
+    fill: #000;
+  }
+}
+
+.svg-small {
+  max-width: 30px;
+  margin: 0 1rem;
+  &:hover .outer-shape {
+    fill: #000;
+  }
+}
+
+.outer-shape {
+  fill: $color-text;
+  transition: $transition-svg;
+} 
+
+.inner-shape {
+  fill: white;
+}

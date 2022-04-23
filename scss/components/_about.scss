@@ -1,0 +1,23 @@
+.text {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 1rem;
+}
+
+.text--about {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.in-text-link {
+    color: $color-primary;
+    &:visited {
+        color: $color-link-visited;
+    }
+}
+
+// make more info hidden by default
+#more-info {
+    display: none;
+}

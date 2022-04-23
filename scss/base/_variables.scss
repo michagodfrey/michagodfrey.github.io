@@ -12,14 +12,19 @@ $color-boneWhite: #f2f3f4;
 
 // Button background colors
 $color-button-default: #4169e1;
-$color-button-error: #e4757a;
+$color-button-error: #e83535;
 $color-button-info: #927bc1;
 $color-button-success: #228b22;
 $color-button-warning: #fd7856;
 
 // Font style
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 $font-stack-primary: 'Oxygen', 'Lato', sans-serif;
 
-// Breakpoints
+// Screen width breakpoints
 $break-m: 660px;
 $break-l: 1024px;
+
+// Animations
+$transition: color .2s ease;
+$transition-svg: fill .2s ease;
