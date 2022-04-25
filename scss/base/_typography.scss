@@ -1,3 +1,6 @@
+// ============================================= 
+//              base elements                      
+// ============================================= 
 
 p {
   line-height: 1.45em;
@@ -9,6 +12,12 @@ p {
 a {
   text-decoration: none;
   color: $color-text;
+}
+
+h2 {
+  font-weight: 700;
+  color: $color-primary;
+  padding: 0 10px;
 }
 
 h4 {
@@ -24,17 +33,23 @@ hr {
 }
 
 // ============================================= 
-//              Typography                       
+//              classes                      
 // ============================================= 
 
-.headline-primary {
-  color: $color-primary; 
+.in-text-link {
+  color: $color-primary;
+
+  &:visited {
+    color: $color-link-visited;
+  }
 }
 
-.headline-secondary {
-  font-weight: 700;
+// ============================================= 
+//              add on classes                      
+// ============================================= 
+
+.primary-color {
   color: $color-primary;
-  padding: 0 10px;
 }
 
 .headline-section {
@@ -42,16 +57,10 @@ hr {
   margin-left: 10px;
 }
 
-.name-title {
+.bold-emphasis {
   display: block;
   font-weight: 700;
 }
-
-.project-text {
-  margin: 0 5px 10px 5px;
-}
-
-// add on styles
 
 .text-center {
   text-align: center;

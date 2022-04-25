@@ -6,20 +6,13 @@ header {
     padding: 1rem;
 }
 
-// social media icons and intrapage links
-
-.link-container {
-    display: none;
-    align-items: center;
-    align-content: stretch;
-}
-
 // dropdown menu for mobile devices
 
 .dropdown {
     position: relative;
     margin: auto 0;
     z-index: 1;
+    
 }
 
 .link {
@@ -68,6 +61,14 @@ header {
     font-size: 2rem;
 }
 
+// social media icons and intrapage links
+
+.link-container {
+    display: none;
+    align-items: center;
+    align-content: stretch;
+}
+
 // intra page links for wider screens
 
 .nav {
@@ -106,10 +107,7 @@ header {
 
 @media (min-width: $break-l) {
 
-    
-
     .nav {
-        // display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;

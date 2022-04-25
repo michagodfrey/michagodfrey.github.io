@@ -2,11 +2,12 @@
 const sender = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
+const form = document.getElementById('form');
 const loading = document.getElementById('loading');
 
 // Send email function from https://www.emailjs.com/
 window.onload = function() {
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    document.getElementById('form').addEventListener('submit', function(event) {
         event.preventDefault();
         if (sender.value === '' || email.value === '' || message.value === '') {
           alert('Please complete all fields before sending message.');

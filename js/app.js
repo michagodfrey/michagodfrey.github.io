@@ -21,17 +21,19 @@ document.addEventListener("click", (e) => {
 $(document).ready(function () {
   $("#toggle-hide-show").click(function () {
     $("#more-info").slideToggle("slow");
-    $(this).text(
-      $(this).text() == "Show less" ? "Show more" : "Show less"
+    $(this).html(
+      $(this).html() === "show less"
+        ? "show more &darr;"
+        : "show less"
     );
   });
 });
 
-// send message modal modal code adapted from example at w3 schools
+// modal code adapted from example at w3 schools
 // https: //www.w3schools.com/howto/howto_css_modals.asp
 
 // Modal elements
-const modal = document.getElementById("myModal");
+const modal = document.getElementById("modal");
 const closeModal = document.getElementById("close-modal");
 
 // Open modal 

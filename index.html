@@ -21,10 +21,10 @@
   <body>
 
     <!-- The Modal - hidden by default -->
-    <div id="myModal" class="modal">
-      <div id="content" class="modal-content">
-        <!-- contact form -->
-        <form id="contact-form">
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <!-- message me form -->
+        <form id="form">
           <div class="close-btn-container">
             <buttton id="close-modal" class="close-btn">&#x2716;</buttton>
           </div>
@@ -131,49 +131,49 @@
 
     <main>
       <!-- intro section -->
+      <!-- design of intro inspired by Kevin Powell's portfolio tutorial -->
+      <!-- https://www.youtube.com/watch?v=_xkSvufmjEs&ab_channel=freeCodeCamp.org -->
       <div class="row">
         <div class="col-12">
           <div class="col-12 intro">
-            <h1 class="title">
+            <h1 class="intro__title">
               Hi, I am
-              <strong class="name-title headline-primary"
+              <strong class="primary-color bold-emphasis"
                 >Michael Godfrey</strong
               >
             </h1>
-            <div class="subtitle">Web Developer</div>
+            <div class="intro__subtitle">Web Developer</div>
             <img
               src="images/michael-godfrey.jpg"
-              class="img-profile"
+              class="intro__img"
               alt="image of Michael"
             />
           </div>
         </div>
       </div>
-
         
       <!-- about section -->
-        <div id="about" class="col-12 centered flex-column">
-          <h2 class="headline-secondary">About</h2>
-          <p class="text text--about">
+        <div id="about" class="col-12 flex-column">
+          <h2>About</h2>
+          <p class="about__text about__text--center">
             Welcome and thank you for visiting this site. I am teaching myself web development and 
             here are projects made with <em>HTML, CSS and Sass, Javascript 
             and React</em>. 
             I am open to feedback and interested in
             collaborating with others to contribute to new projects.
           </p>
-          
-          <p
+          <!-- hide/show button -->
+          <button
             id="toggle-hide-show"
             class="btn"
-            >Show More &darr;</p
+            >show more &darr;</button
           >
-          
           <!-- hidden more info area -->
           <div id="more-info">
             <div class="row col-6">
               <div>
-              <h2 class="headline-secondary">Who am I?</h2>
-              <p class="text">
+              <h2>Who am I?</h2>
+              <p class="about__text">
                 I live in Australia, Melbourne metro area. Right now I work in 
                 plant biosecurity and one of the projects here is related to that.
                 Previously I have been an English language teacher and served in the
@@ -183,8 +183,8 @@
               </div>
 
               <div>
-              <h2 class="headline-secondary">My coding journey</h2>
-              <p class="text">
+              <h2>My coding journey</h2>
+              <p class="about__text">
                 I started learning about web development while I was looking for 
                 an indoor pastime during the Covid lockdowns. I found I enjoyed 
                 creating web pages so In 2021 I completed a front end development 
@@ -453,14 +453,14 @@
 
     <!-- footer -->
 
-    <footer id="contact">
+    <footer>
       <!-- Contact me call to action -->
 
-      <div class="contact-container">
-        <h3 class="headline-secondary">
+      <div class="footer__contact">
+        <h2>
           Want to talk? I'd be happy to! Message me here or find me on social
           media.
-        </h3>
+        </h2>
         <button class="btn default" onclick=(openModal())>Let's Talk</button>
         <div>
         <a href="https://github.com/michagodfrey" target="_blank">
@@ -512,6 +512,7 @@
           </a>
       </div>
       </div>
+      <a href='/' class='footer__top-link'>Back to Top</a>
     </footer>
 
   </body>

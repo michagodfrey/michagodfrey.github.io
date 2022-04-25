@@ -19,7 +19,7 @@
 }
 
 /* Modal Content */
-.modal-content {
+.modal__content {
     position: relative;
     margin: auto;
     padding: 0;
@@ -27,7 +27,7 @@
     max-width: 700px;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
 }
 
 /* Slide down animation */
