@@ -13,23 +13,9 @@ form {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
 }
 
-.close-btn-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.close-btn {
-  font-size: 2rem;
-  padding-right: .5rem ;
-  cursor: pointer;
-  color: $color-button-error;
-  transition: $transition;
-  &:hover {
-    color: lighten($color-button-error, 15%);
-  }
-}
-
-.input{
+input[type="text"],
+input[type="email"],
+textarea {
   display: block;
   width: 100%;
   border: solid 1px $color-text;
@@ -39,19 +25,21 @@ form {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
 }
 
-.textarea {
+textarea {
   height: 100px;
   margin-bottom: 15px;
 }
 
 @media (min-width: $break-m) {
 
-  .input,
-  .textarea {
+  input[type="text"],
+  input[type="email"],
+  textarea {
     width: 80%;
   }
-
 }
+
+// loading animation on send
 
 .animation-wrapper {
   height: 100%;

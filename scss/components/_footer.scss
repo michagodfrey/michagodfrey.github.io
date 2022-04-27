@@ -36,3 +36,23 @@ footer {
         bottom: 2rem;
     }
 }
+
+// social media svg icons
+
+.svg-large {
+    max-width: 50px;
+    margin: 1rem;
+
+    .outer-shape {
+        fill: #000;
+        transition: $transition-svg;
+    }
+
+    .inner-shape {
+        fill: $color-secondary;
+    }
+
+    &:hover .outer-shape {
+        fill: $color-primary;
+    }
+}

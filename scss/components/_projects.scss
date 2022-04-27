@@ -1,24 +1,22 @@
-// project containers
+// =============================================
+//            project containers
+// =============================================
+
 .project {
-    max-width: 500px;
-    margin: 1rem auto;
     position: relative;
-    border-radius: 5%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+    &:hover .project__overlay {
+        transform: translateY(-100%);
+        height: 100%;
+    }
 }
 
-.project-text {
-    margin: 0 5px 10px 5px;
+.project__img {
+    max-width: 100%;
+    max-height: 500px;
+    
 }
 
-.flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0;
-    margin: 0 auto;
-}
-
-.overlay {
+.project__overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,33 +24,25 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    opacity: 0;
-    border: 3px solid $color-secondary;
-    border-radius: 5%;
-    background: $color-primary;
-    color: $color-secondary;
-    transform: translateY(-100%);
-    transition: opacity 0.3s ease-out;
-
-    &:hover {
-        opacity: 1;
-    }
+    color: $color-boneWhite;
+    background: rgba(0,0,0,.5);
+    height: 0;
+    transform: translateY(-200%);
+    overflow: clip;
+    transition: all 0.3s ease-out;
 }
 
-@media (min-width: $break-m) {
-
-    .project {
-        max-width: 45%;
-    }
-
-    .flex-container {
-        justify-content: space-evenly;
-    }
+.project__text {
+    margin: 0 5px 10px 5px;
+   
 }
 
-@media (min-width: $break-l) {
+// @media (min-width: $break-m) {
 
-    .project {
-        max-width: 30%;
-    }
-}
+  
+// }
+
+// @media (min-width: $break-l) {
+
+   
+// }

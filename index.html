@@ -25,13 +25,13 @@
       <div class="modal__content">
         <!-- message me form -->
         <form id="form">
-          <div class="close-btn-container">
+          <div class="flex-end">
             <buttton id="close-modal" class="close-btn">&#x2716;</buttton>
           </div>
           <h2 class="text-primary-color centered">Thanks for reaching out. What can I help you with?</h2>
-          <input id="name" type="text" name="user_name" placeholder="Your name or organisation" class="input">
-          <input id="email" type="email" name="user_email" placeholder="Email" class="input">
-          <textarea id="message" name="message" placeholder="Message" class="input textarea"></textarea>
+          <input id="name" type="text" name="user_name" placeholder="Your name or organisation">
+          <input id="email" type="email" name="user_email" placeholder="Email">
+          <textarea id="message" name="message" placeholder="Message"></textarea>
           <button type="submit" class="btn default centered">Send</button>
         </form>
         <!-- loading animaton on send message -->
@@ -49,18 +49,36 @@
       
         <!-- Dropdown menu for mobile devices -->
         <div class="dropdown" data-dropdown>
-          <button class="link" data-dropdown-button>Menu</button>
-          <div class="dropdown-menu information-grid">
+          <button class="dropdown__btn" data-dropdown-button>Menu</button>
+          <div class="dropdown__menu dropdown__grid">
             <div>
-              <div class="dropdown-links">
-                <a href="#about" class="link">About</a>
-                <a href="#projects" class="link">Projects</a>
+              <div class="dropdown__links">
+                <a href="#about" class="dropdown__btn">About</a>
+                <a href="#projects" class="dropdown__btn">Projects</a>
                 <a
                   href="https://docs.google.com/document/d/1R4C74Jm3oEx9XqhsnJkh-p3EUgEsXVTr/edit?usp=sharing&ouid=112309810791255870080&rtpof=true&sd=true"
                   target="_blank"
-                  class="link"
+                  class="dropdown__btn"
                   >Resume</a
                 >
+                <a href="https://github.com/michagodfrey">
+                  <div class="flex-row">
+                    <span class="dropdown__btn">GitHub</span>
+                    <img src="images/github.svg" alt="github" class="svg-menu" />
+                  </div>
+                </a>
+                <a href="https://twitter.com/Michael07865192">
+                  <div class="flex-row">
+                    <span class="dropdown__btn">Twitter</span>
+                    <img src="images/twitter.svg" alt="twitter" class="svg-menu" />
+                  </div>
+                </a>
+                <a href="https://www.linkedin.com/in/michael-godfrey-82258bb3/">
+                  <div class="flex-row">
+                    <span class="dropdown__btn">LinkedIn</span>
+                    <img src="images/linkedin.svg" alt="linkedin" class="svg-menu" />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -115,10 +133,10 @@
             ></path>
           </svg>
           </a>
-            <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-page" href="#about">About</a>
+          <a class="nav-page" href="#projects">Projects</a>
           <a
-            class="nav-link"
+            class="nav-page"
             href="https://docs.google.com/document/d/1R4C74Jm3oEx9XqhsnJkh-p3EUgEsXVTr/edit?usp=sharing&ouid=112309810791255870080&rtpof=true&sd=true"
             target="_blank"
             >Resume</a
@@ -131,8 +149,6 @@
 
     <main>
       <!-- intro section -->
-      <!-- design of intro inspired by Kevin Powell's portfolio tutorial -->
-      <!-- https://www.youtube.com/watch?v=_xkSvufmjEs&ab_channel=freeCodeCamp.org -->
       <div class="row">
         <div class="col-12">
           <div class="col-12 intro">
@@ -174,11 +190,11 @@
               <div>
               <h2>Who am I?</h2>
               <p class="about__text">
-                I live in Australia, Melbourne metro area. Right now I work in 
+                I live in Australia, Melbourne metro area. Currently, I work in 
                 plant biosecurity and one of the projects here is related to that.
                 Previously I have been an English language teacher and served in the
-                Australian army. I have a life-long learning mentality - recently 
-                I discoverd coding and web development and have been practising ever since. 
+                Australian army. I have a life-long learning mentality; recently 
+                I discoverd web development and have been practising ever since. 
               </p>
               </div>
 
@@ -217,85 +233,90 @@
       <h2 id="projects" class="headline-section text-center">My Projects</h2>
 
         <div class="row">
-        <div class="col-12 flex-container">
+          <div class="col-6 flex-column">
+            <h4>Quarantine Query</h4>
+            <div class="project">
+              <img
+                src="images/quarantine-query.jpg"
+                alt="quarantine query"
+                class="project__img"
+              />
+              <div class="project__overlay">
+                
+                <p class="project__text">
+                  This is a long term project that aims to give information 
+                  about Australian interstate biosecurity rules. 
+                </p>
+                <p class="project__text">
+                  Built with: React and Sass. 
+                </p>
 
-          <div class="project">
-            <img
-              src="images/quarantine-query.jpg"
-              alt="quarantine query"
-              class="img-frame"
-            />
-            <div class="overlay">
-              <h4>Quarantine Query</h4>
-              <p class="project-text">
-                This is a long term project that aims to give information 
-                about Australian interstate biosecurity rules. 
-              </p>
-              <p class="project-text">
-                Built with: React and Sass. 
-              </p>
-
-              <a
-                href="https://michagodfrey.github.io/attba/"
-                target="_blank"
-                class="btn info"
-                >Open Project</a
-              >
-              <a
-                href="https://github.com/michagodfrey/attba"
-                target="_blank"
-                class="btn info"
-                >View Code</a
-              >
+                <a
+                  href="https://michagodfrey.github.io/attba/"
+                  target="_blank"
+                  class="btn info"
+                  >Open Project</a
+                >
+                <a
+                  href="https://github.com/michagodfrey/attba"
+                  target="_blank"
+                  class="btn info"
+                  >View Code</a
+                >
+              </div>
             </div>
           </div>
-
-          <div class="project">
-            <img
-              src="images/fiji.jpg"
-              alt="Fiji life website"
-              class="img-frame"
-            />
-            <div class="overlay">
-              <h4>Life in Savasavu, Fiji</h4>
-              <p class="project-text">
-                A webpage to host photos and stories for two retirees living in Fiji. 
-              </p>
-              <p class="project-text">
-                Built with: HTML and CSS.
-              </p>
-              <a
-                href="https://michagodfrey.github.io/fiji"
-                target="_blank"
-                class="btn info"
-                >Open Project</a
-              >
-              <a
-                href="https://github.com/michagodfrey/fiji/tree/gh-pages"
-                target="_blank"
-                class="btn info"
-                >View Code</a
-              >
+          
+          <div class="col-6 flex-column">
+            <h4>Life in Savasavu, Fiji</h4>
+            <div class="project">
+              <img
+                src="images/fiji.jpg"
+                alt="Fiji life website"
+                class="project__img"
+              />
+              <div class="project__overlay">
+                
+                <p class="project__text">
+                  A webpage to host photos and stories for two retirees living in Fiji. 
+                </p>
+                <p class="project__text">
+                  Built with: HTML and CSS.
+                </p>
+                <a
+                  href="https://michagodfrey.github.io/fiji"
+                  target="_blank"
+                  class="btn info"
+                  >Open Project</a
+                >
+                <a
+                  href="https://github.com/michagodfrey/fiji/tree/gh-pages"
+                  target="_blank"
+                  class="btn info"
+                  >View Code</a
+                >
+              </div>
             </div>
           </div>
-        </div>
+        
       </div>
 
       <h2 class="headline-section text-center">Front-end Mentor Challenges</h2>
          <div class="row">
-            <div class="col-12 flex-container">
+            <div class="col-6 flex-column">
+              <h4>Sunnyside agency landing page</h4>
                <div class="project">
                   <img
                     src="images/sunnyside.jpg"
                     alt="sunnyside agency landing page"
-                    class="img-frame"
+                    class="project__img"
                   />
-                  <div class="overlay">
-                    <h4>Sunnyside agency landing page</h4>
-                    <p class="project-text">
+                  <div class="project__overlay">
+                    
+                    <p class="project__text">
                       Highly responsive and precise imitation of design.  
                     </p>
-                    <p class="project-text">
+                    <p class="project__text">
                       Built with: HTML, CSS, Javascript 
                     </p>
                     <a
@@ -318,19 +339,22 @@
                     >
                   </div>
                 </div>
-                 
+              </div>  
+
+              <div class="col-6 flex-column">
+                <h4>Jobs Listing with Filtering</h4>
                 <div class="project">
                   <img
                     src="images/screenshot-jobs.jpg"
                     alt="job listings with filtering"
-                    class="img-frame"
+                    class="project__img"
                   />
-                  <div class="overlay">
-                    <h4>Jobs Listing with Filtering</h4>
-                    <p class="project-text">
+                  <div class="project__overlay">
+                    
+                    <p class="project__text">
                       Jobs listing with filtering.
                     </p>
-                    <p class="project-text">
+                    <p class="project__text">
                       Built with: React, CSS
                     </p>
                     <a
@@ -353,19 +377,24 @@
                     >
                   </div>
                 </div>
+              </div>
+              </div>
 
+              <div class="row">
+              <div class="col-6 flex-column">
+                <h4>Tip calculator</h4>
                 <div class="project">
                   <img
                     src="images/tip-calculator.jpg"
                     alt="tip calculator"
-                    class="img-frame"
+                    class="project__img"
                   />
-                  <div class="overlay">
-                    <h4>Tip calculator</h4>
-                    <p class="project-text">
+                  <div class="project__overlay">
+                    
+                    <p class="project__text">
                       A tip calculator.  
                     </p>
-                    <p class="project-text">
+                    <p class="project__text">
                       Built with: HTML, CSS, Javascript.  
                     </p>
                     <a
@@ -388,24 +417,25 @@
                     >
                   </div>
                 </div>
-            </div>
-        </div>
+              </div>
+              </div>
+        
 
 
       <!-- Treehouse projects-->
       <h2 class="headline-section text-center">Treehouse TechDegree Projects</h2>
       <div class="row">
-        <div class="col-12 flex-container">
+        <div class="col-6 flex-column">
+          <h4>Phrase Guessing Game</h4>
           <div class="project">
             <img
               src="images/phrase-game.jpg"
               alt="phrase guessing game"
-              class="img-frame"
+              class="project__img"
             />
-            <div class="overlay">
-              <h4>Phrase Guessing Game</h4>
-              <p class="project-text">Javascript Dom manipulation</p>
-              <p class="project-text">Built with: HTML, CSS, Javascript</p>
+            <div class="project__overlay">
+              <p class="project__text">Javascript Dom manipulation</p>
+              <p class="project__text">Built with: HTML, CSS, Javascript</p>
               <a
                 href="https://michagodfrey.github.io/phrase-guessing-game/"
                 target="_blank"
@@ -420,17 +450,19 @@
               >
             </div>
           </div>
-
+          </div>
+          <div class="col-6 flex-column">
+            <h4>Employee Directory</h4>
           <div class="project">
             <img
               src="images/directory.jpg"
               alt="employee directory"
-              class="img-frame"
+              class="project__img"
             />
-            <div class="overlay">
-              <h4>Employee Directory</h4>
-              <p class="project-text">Fetch function and API</p>
-              <p class="project-text">Built with: HTML, CSS, Javascript</p>
+            <div class="project__overlay">
+              
+              <p class="project__text">Fetch function and API</p>
+              <p class="project__text">Built with: HTML, CSS, Javascript</p>
               <a
                 href="https://michagodfrey.github.io/employee-directory/"
                 target="_blank"
@@ -445,8 +477,8 @@
               >
             </div>
           </div>
-
-        </div>
+          </div>
+        
       </div>
       <!-- end project containers -->
     </main>

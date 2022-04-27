@@ -1,3 +1,7 @@
+// ============================================= 
+//              header                     
+// ============================================= 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -6,29 +10,31 @@ header {
     padding: 1rem;
 }
 
-// dropdown menu for mobile devices
+// ============================================= 
+//        dropdown menu for mobiles                     
+// ============================================= 
 
 .dropdown {
     position: relative;
     margin: auto 0;
     z-index: 1;
-    
 }
 
-.link {
+.dropdown__btn {
     background: none;
     border: none;
     color: $color-text;
     cursor: pointer;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
-.dropdown.active>.link,
-.link:hover {
+.dropdown.active>.dropdown__btn,
+.dropdown__btn:hover {
     color: black;
 }
 
-.dropdown-menu {
+.dropdown__menu {
     position: absolute;
     right: 0;
     top: calc(100% + .25rem);
@@ -42,40 +48,45 @@ header {
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
-.dropdown.active>.link+.dropdown-menu {
+.dropdown.active>.dropdown__btn+.dropdown__menu {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
 }
 
-.information-grid {
+.dropdown__grid {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 2rem;
 }
 
-.dropdown-links {
+.dropdown__links {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     font-size: 2rem;
 }
 
-// social media icons and intrapage links
+.svg-menu {
+    max-height: 2rem;
+    margin-left: .5rem;
+}
+
+// ============================================= 
+//       display on wider screens                  
+// ============================================= 
+
 
 .link-container {
     display: none;
     align-items: center;
-    align-content: stretch;
 }
-
-// intra page links for wider screens
 
 .nav {
     padding-left: 0;
     display: none;
 
-    &-link {
+    &-page {
         text-align: center;
         padding: 10px 20px;
         display: block;
@@ -90,7 +101,27 @@ header {
     }
 }
 
-// media queries
+.svg-small {
+    max-width: 30px;
+    margin: 0 1rem;
+
+    .outer-shape {
+        fill: $color-text;
+        transition: $transition-svg;
+    }
+
+    .inner-shape {
+        fill: white;
+    }
+
+    &:hover .outer-shape {
+        fill: #000;
+    }
+}
+
+// ============================================= 
+//       media queries                 
+// ============================================= 
 
 @media (min-width: $break-m) {
 
@@ -100,6 +131,7 @@ header {
     
     .link-container {
         display: flex;
+        flex-basis: 80%;
         justify-content: space-evenly;
     }
 
