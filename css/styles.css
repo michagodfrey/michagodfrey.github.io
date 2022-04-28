@@ -19,6 +19,7 @@ main {
 }
 
 .flex-column {
+  display: flex;
   flex-direction: column;
 }
 
@@ -28,12 +29,17 @@ main {
 }
 
 .flex-start {
+  display: flex;
   align-items: flex-start;
 }
 
 .flex-end {
   display: flex;
   justify-content: flex-end;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .row {
@@ -50,7 +56,7 @@ main {
   border-radius: 5px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .row {
     flex-direction: row;
   }
@@ -80,7 +86,6 @@ main {
   }
   .col-6 {
     flex-basis: 50.00%;
-    border: 1px solid red;
   }
   .col-7 {
     flex-basis: 58.33%;
@@ -518,7 +523,7 @@ template {
   font-weight: bolder;
   color: #00539CFF;
   border: none;
-  padding: 1rem;
+  padding: .5rem;
   margin: .5rem;
   text-transform: uppercase;
   min-width: 120px;
@@ -529,18 +534,6 @@ template {
 
 .btn:hover {
   transition-duration: .2s;
-}
-
-.close-btn {
-  font-size: 2rem;
-  padding-right: .5rem;
-  cursor: pointer;
-  color: #e83535;
-  transition: color 0.2s ease;
-}
-
-.close-btn:hover {
-  color: #f07a7a;
 }
 
 .primary {
@@ -630,7 +623,7 @@ textarea {
   margin-bottom: 15px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   input[type="text"],
   input[type="email"],
   textarea {
@@ -675,6 +668,18 @@ textarea {
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
+}
+
+.modal__close {
+  font-size: 2rem;
+  padding-right: .5rem;
+  cursor: pointer;
+  color: #e83535;
+  transition: color 0.2s ease;
+}
+
+.modal__close:hover {
+  color: #f07a7a;
 }
 
 /* Slide down animation */
@@ -797,7 +802,7 @@ header {
   fill: #000;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .dropdown {
     display: none;
   }
@@ -805,16 +810,6 @@ header {
     display: flex;
     flex-basis: 80%;
     justify-content: space-evenly;
-  }
-}
-
-@media (min-width: 1024px) {
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    height: auto;
-    width: auto;
   }
 }
 
@@ -866,7 +861,7 @@ footer {
   text-decoration: underline;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .footer__top-link {
     bottom: 2rem;
   }
@@ -925,7 +920,7 @@ footer {
   z-index: 2;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .intro {
     display: grid;
     width: min-content;
@@ -950,32 +945,45 @@ footer {
 }
 
 .project:hover .project__overlay {
-  transform: translateY(-100%);
   height: 100%;
+  justify-content: space-around;
+}
+
+.project:hover .project__link {
+  display: block;
 }
 
 .project__img {
   max-width: 100%;
-  max-height: 500px;
 }
 
 .project__overlay {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
   position: absolute;
-  color: #f2f3f4;
-  background: rgba(0, 0, 0, 0.5);
-  height: 0;
-  transform: translateY(-200%);
-  overflow: clip;
+  background: rgba(0, 0, 0, 0.75);
+  height: 33%;
+  transform: translateY(-100%);
+  overflow: hidden;
   transition: all 0.3s ease-out;
 }
 
+.project__title {
+  margin-top: .25rem;
+  color: #f2f3f4;
+  font-size: 1.5rem;
+}
+
 .project__text {
-  margin: 0 5px 10px 5px;
+  margin-top: .5rem;
+  color: #f2f3f4;
+  text-align: center;
+  max-width: 500px;
+}
+
+.project__link {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */

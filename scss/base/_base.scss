@@ -26,6 +26,7 @@ main {
 // ============================================= 
 
 .flex-column {
+    display: flex;
     flex-direction: column;
 }
 
@@ -35,12 +36,17 @@ main {
 }
 
 .flex-start {
+    display: flex;
     align-items: flex-start;
 }
 
 .flex-end {
     display: flex;
     justify-content: flex-end;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 // ============================================= 
@@ -103,7 +109,6 @@ main {
 
     .col-6 {
         flex-basis: 50.00%;
-        border: 1px solid red;
     }
 
     .col-7 {

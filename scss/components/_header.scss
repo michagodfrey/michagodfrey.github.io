@@ -136,14 +136,3 @@ header {
     }
 
 }
-
-@media (min-width: $break-l) {
-
-    .nav {
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        height: auto;
-        width: auto;
-    }
-}

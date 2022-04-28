@@ -5,44 +5,44 @@
 .project {
     position: relative;
     &:hover .project__overlay {
-        transform: translateY(-100%);
         height: 100%;
+        justify-content: space-around;
+    }
+    &:hover .project__link {
+        display: block;
     }
 }
 
 .project__img {
     max-width: 100%;
-    max-height: 500px;
-    
 }
 
 .project__overlay {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
     position: absolute;
-    color: $color-boneWhite;
-    background: rgba(0,0,0,.5);
-    height: 0;
-    transform: translateY(-200%);
-    overflow: clip;
+    background: rgba(0,0,0,.75);
+    height: 33%;
+    transform: translateY(-100%);
+    overflow: hidden;
     transition: all 0.3s ease-out;
 }
 
-.project__text {
-    margin: 0 5px 10px 5px;
-   
+.project__title {
+    margin-top: .25rem;
+    color: $color-boneWhite;
+    font-size: 1.5rem;
 }
 
-// @media (min-width: $break-m) {
+.project__text {
+    margin-top: .5rem;
+    color: $color-boneWhite;
+    text-align: center;
+    max-width: 500px;
+}
 
-  
-// }
-
-// @media (min-width: $break-l) {
-
-   
-// }
+.project__link {
+    display: none;
+}

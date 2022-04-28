@@ -26,7 +26,7 @@
         <!-- message me form -->
         <form id="form">
           <div class="flex-end">
-            <buttton id="close-modal" class="close-btn">&#x2716;</buttton>
+            <span id="close-modal" class="modal__close">&#x2716;</span>
           </div>
           <h2 class="text-primary-color centered">Thanks for reaching out. What can I help you with?</h2>
           <input id="name" type="text" name="user_name" placeholder="Your name or organisation">
@@ -88,7 +88,6 @@
       <div class="link-container">
         <a href="https://github.com/michagodfrey" target="_blank">
             <svg
-            id="github"
             class="svg-small"
             version="1.1"
             viewBox="0 0 100 100"
@@ -104,7 +103,6 @@
           
           <a href="https://twitter.com/Michael07865192" target="_blank">
             <svg
-            id="twitter"
             class="svg-small"
             version="1.1"
             viewBox="0 0 100 100"
@@ -120,7 +118,6 @@
         
           <a href="https://www.linkedin.com/in/michael-godfrey-82258bb3/" target="_blank">
             <svg
-            id="linkedin"
             class="svg-small"
             version="1.1"
             viewBox="0 0 100 100"
@@ -160,7 +157,7 @@
             </h1>
             <div class="intro__subtitle">Web Developer</div>
             <img
-              src="images/michael-godfrey.jpg"
+              src="images/profile.jpeg"
               class="intro__img"
               alt="image of Michael"
             />
@@ -181,7 +178,7 @@
           <!-- hide/show button -->
           <button
             id="toggle-hide-show"
-            class="btn"
+            class="btn centered"
             >show more &darr;</button
           >
           <!-- hidden more info area -->
@@ -201,8 +198,8 @@
               <div>
               <h2>My coding journey</h2>
               <p class="about__text">
-                I started learning about web development while I was looking for 
-                an indoor pastime during the Covid lockdowns. I found I enjoyed 
+                I started learning coding and computer science as
+                a pastime during the Covid lockdowns. I enjoyed
                 creating web pages so In 2021 I completed a front end development 
                 course by
                 <a
@@ -213,7 +210,7 @@
                 >
                 where I created 9 projects for assessment as well as passing an
                 exam. From there, I have continued developing in public using Twitter 
-                through and the
+                and the
                 <a
                   class="in-text-link"
                   href="https://www.100daysofcode.com/"
@@ -234,67 +231,71 @@
 
         <div class="row">
           <div class="col-6 flex-column">
-            <h4>Quarantine Query</h4>
             <div class="project">
               <img
-                src="images/quarantine-query.jpg"
+                src="images/quarantine1.jpg"
                 alt="quarantine query"
                 class="project__img"
               />
               <div class="project__overlay">
-                
+                <div class="text-center">
+                  <h4 class="project__title">Quarantine Query</h4>
+                  <p class="project__text">
+                    Built with: React and Sass. 
+                  </p>
+                </div>
                 <p class="project__text">
-                  This is a long term project that aims to give information 
-                  about Australian interstate biosecurity rules. 
+                  A website providing biosecurity information for travellers and business. 
                 </p>
-                <p class="project__text">
-                  Built with: React and Sass. 
-                </p>
-
-                <a
+                <div class="flex-row">
+                  <a
                   href="https://michagodfrey.github.io/attba/"
                   target="_blank"
-                  class="btn info"
+                  class="btn info project__link"
                   >Open Project</a
                 >
                 <a
                   href="https://github.com/michagodfrey/attba"
                   target="_blank"
-                  class="btn info"
+                  class="btn info project__link"
                   >View Code</a
                 >
+                </div>      
               </div>
             </div>
           </div>
           
           <div class="col-6 flex-column">
-            <h4>Life in Savasavu, Fiji</h4>
             <div class="project">
               <img
-                src="images/fiji.jpg"
+                src="images/fiji1.jpg"
                 alt="Fiji life website"
                 class="project__img"
               />
               <div class="project__overlay">
-                
+                <div class="text-center">
+                  <h4 class="project__title">Life in Savasavu</h4>
+                  <p class="project__text">
+                    Built with: HTML and CSS.
+                  </p>
+                </div>
                 <p class="project__text">
                   A webpage to host photos and stories for two retirees living in Fiji. 
                 </p>
-                <p class="project__text">
-                  Built with: HTML and CSS.
-                </p>
+                <div class="flex-row">
                 <a
                   href="https://michagodfrey.github.io/fiji"
                   target="_blank"
-                  class="btn info"
+                  class="btn info project__link"
                   >Open Project</a
                 >
                 <a
                   href="https://github.com/michagodfrey/fiji/tree/gh-pages"
                   target="_blank"
-                  class="btn info"
+                  class="btn info project__link"
                   >View Code</a
                 >
+                </div>
               </div>
             </div>
           </div>
@@ -304,77 +305,80 @@
       <h2 class="headline-section text-center">Front-end Mentor Challenges</h2>
          <div class="row">
             <div class="col-6 flex-column">
-              <h4>Sunnyside agency landing page</h4>
                <div class="project">
                   <img
-                    src="images/sunnyside.jpg"
+                    src="images/sunnyside1.jpg"
                     alt="sunnyside agency landing page"
                     class="project__img"
                   />
                   <div class="project__overlay">
-                    
-                    <p class="project__text">
-                      Highly responsive and precise imitation of design.  
-                    </p>
-                    <p class="project__text">
+                    <div class="text-center">
+                      <h4 class="project__title">Sunnyside landing page</h4>
+                      <p class="project__text">
                       Built with: HTML, CSS, Javascript 
                     </p>
-                    <a
-                      href="https://www.frontendmentor.io/solutions/sunnyside-landing-page-using-html-vanilla-css-and-javascript-CgHsrsnzG"
-                      target="_blank"
-                      class="btn info"
-                      >View Solution</a
-                    >
-                    <a
-                      href="https://michagodfrey.github.io/frontend-mentor-sunnyside/"
-                      target="_blank"
-                      class="btn info"
-                      >Open Project</a
-                    >
-                    <a
-                      href="https://github.com/michagodfrey/frontend-mentor-sunnyside/tree/master"
-                      target="_blank"
-                      class="btn info"
-                      >View Code</a
-                    >
+                      
+                    </div>
+                    
+                    <div class="flex-row flex-wrap">
+                      <a
+                        href="https://www.frontendmentor.io/solutions/sunnyside-landing-page-using-html-vanilla-css-and-javascript-CgHsrsnzG"
+                        target="_blank"
+                        class="btn info project__link"
+                        >View Solution</a
+                      >
+                      <a
+                        href="https://michagodfrey.github.io/frontend-mentor-sunnyside/"
+                        target="_blank"
+                        class="btn info project__link"
+                        >Open Project</a
+                      >
+                      <a
+                        href="https://github.com/michagodfrey/frontend-mentor-sunnyside/tree/master"
+                        target="_blank"
+                        class="btn info project__link"
+                        >View Code</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>  
 
               <div class="col-6 flex-column">
-                <h4>Jobs Listing with Filtering</h4>
                 <div class="project">
                   <img
-                    src="images/screenshot-jobs.jpg"
+                    src="images/jobs-listing1.jpg"
                     alt="job listings with filtering"
                     class="project__img"
                   />
                   <div class="project__overlay">
-                    
-                    <p class="project__text">
-                      Jobs listing with filtering.
-                    </p>
-                    <p class="project__text">
+                    <div class="text-center">
+                      <h4 class="project__title">Jobs Listing with Filtering</h4>
+                      <p class="project__text">
                       Built with: React, CSS
                     </p>
-                    <a
-                      href="https://www.frontendmentor.io/solutions/jobs-listing-with-filtering-built-with-react-LMccYL0ca"
-                      target="_blank"
-                      class="btn info"
-                      >View Solution</a
-                    >
-                    <a
-                      href="https://michagodfrey.github.io/job-listings/"
-                      target="_blank"
-                      class="btn info"
-                      >Open Project</a
-                    >
-                    <a
-                      href="https://github.com/michagodfrey/job-listings/tree/main"
-                      target="_blank"
-                      class="btn info"
-                      >View Code</a
-                    >
+                  </div>
+                  
+                    <div class="flex-row flex-wrap">
+                      <a
+                        href="https://www.frontendmentor.io/solutions/jobs-listing-with-filtering-built-with-react-LMccYL0ca"
+                        target="_blank"
+                        class="btn info project__link"
+                        >View Solution</a
+                      >
+                      <a
+                        href="https://michagodfrey.github.io/job-listings/"
+                        target="_blank"
+                        class="btn info project__link"
+                        >Open Project</a
+                      >
+                      <a
+                        href="https://github.com/michagodfrey/job-listings/tree/main"
+                        target="_blank"
+                        class="btn info project__link"
+                        >View Code</a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -382,39 +386,40 @@
 
               <div class="row">
               <div class="col-6 flex-column">
-                <h4>Tip calculator</h4>
                 <div class="project">
                   <img
-                    src="images/tip-calculator.jpg"
+                    src="images/tip-calculator1.jpg"
                     alt="tip calculator"
                     class="project__img"
                   />
                   <div class="project__overlay">
-                    
-                    <p class="project__text">
-                      A tip calculator.  
-                    </p>
+                    <div class="text-center">
+                    <h4 class="project__title">Tip calculator</h4>
                     <p class="project__text">
                       Built with: HTML, CSS, Javascript.  
                     </p>
+                    </div>
+              
+                    <div class="flex-row flex-wrap">
                     <a
                       href="https://www.frontendmentor.io/solutions/tip-calculator-POtUwOBly"
                       target="_blank"
-                      class="btn info"
+                      class="btn info project__link"
                       >View Solution</a
                     >
                     <a
                       href="https://michagodfrey.github.io/frontend-mentor-tip-calculator/"
                       target="_blank"
-                      class="btn info"
+                      class="btn info project__link"
                       >Open Project</a
                     >
                     <a
                       href="https://github.com/michagodfrey/frontend-mentor-tip-calculator/tree/gh-pages"
                       target="_blank"
-                      class="btn info"
+                      class="btn info project__link"
                       >View Code</a
                     >
+                    </div>
                   </div>
                 </div>
               </div>
@@ -426,33 +431,36 @@
       <h2 class="headline-section text-center">Treehouse TechDegree Projects</h2>
       <div class="row">
         <div class="col-6 flex-column">
-          <h4>Phrase Guessing Game</h4>
           <div class="project">
             <img
-              src="images/phrase-game.jpg"
+              src="images/phrase-game1.jpg"
               alt="phrase guessing game"
               class="project__img"
             />
             <div class="project__overlay">
-              <p class="project__text">Javascript Dom manipulation</p>
+              <div class="text-center">
+              <h4 class="project__title">Phrase Guessing Game</h4>
               <p class="project__text">Built with: HTML, CSS, Javascript</p>
+              </div>
+              <p class="project__text">Javascript Dom manipulation</p>
+              <div class="flex-row">
               <a
                 href="https://michagodfrey.github.io/phrase-guessing-game/"
                 target="_blank"
-                class="btn info"
+                class="btn info project__link"
                 >Open Project</a
               >
               <a
                 href="https://github.com/michagodfrey/phrase-guessing-game/tree/gh-pages"
                 target="_blank"
-                class="btn info"
+                class="btn info project__link"
                 >View Code</a
               >
+              </div>
             </div>
           </div>
           </div>
           <div class="col-6 flex-column">
-            <h4>Employee Directory</h4>
           <div class="project">
             <img
               src="images/directory.jpg"
@@ -460,21 +468,25 @@
               class="project__img"
             />
             <div class="project__overlay">
-              
-              <p class="project__text">Fetch function and API</p>
-              <p class="project__text">Built with: HTML, CSS, Javascript</p>
+              <div class="text-center">
+                <h4 class="project__title">Employee Directory</h4>
+                <p class="project__text">Built with: HTML, CSS, Javascript</p>
+              </div>
+              <p class="project__text">Fetch function to get data from API</p>
+              <div class="flex-row">
               <a
                 href="https://michagodfrey.github.io/employee-directory/"
                 target="_blank"
-                class="btn info"
+                class="btn info project__link"
                 >Open Project</a
               >
               <a
                 href="https://github.com/michagodfrey/employee-directory/tree/gh-pages"
                 target="_blank"
-                class="btn info"
+                class="btn info project__link"
                 >View Code</a
               >
+              </div>
             </div>
           </div>
           </div>
@@ -497,7 +509,6 @@
         <div>
         <a href="https://github.com/michagodfrey" target="_blank">
             <svg
-            id="github"
             class="svg-large"
             version="1.1"
             viewBox="0 0 100 100"
@@ -513,7 +524,6 @@
           
           <a href="https://twitter.com/Michael07865192" target="_blank">
             <svg
-            id="twitter"
             class="svg-large"
             version="1.1"
             viewBox="0 0 100 100"
@@ -529,7 +539,6 @@
         
           <a href="https://www.linkedin.com/in/michael-godfrey-82258bb3/" target="_blank">
             <svg
-            id="linkedin"
             class="svg-large"
             version="1.1"
             viewBox="0 0 100 100"

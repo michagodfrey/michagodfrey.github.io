@@ -30,6 +30,18 @@
     animation-duration: 0.4s;
 }
 
+.modal__close {
+    font-size: 2rem;
+    padding-right: .5rem;
+    cursor: pointer;
+    color: $color-button-error;
+    transition: $transition;
+
+    &:hover {
+        color: lighten($color-button-error, 15%);
+    }
+}
+
 /* Slide down animation */
 @-webkit-keyframes animatetop {
     from {

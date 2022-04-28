@@ -7,7 +7,7 @@
   font-weight: bolder;
   color: $color-primary;
   border: none;
-  padding: 1rem;
+  padding: .5rem;
   margin: .5rem;
   text-transform: uppercase;
   min-width: 120px;
@@ -16,20 +16,6 @@
   cursor: pointer;
   &:hover {
     transition-duration: .2s;
-  }
-}
-
-// modal close button
-
-.close-btn {
-  font-size: 2rem;
-  padding-right: .5rem;
-  cursor: pointer;
-  color: $color-button-error;
-  transition: $transition;
-
-  &:hover {
-    color: lighten($color-button-error, 15%);
   }
 }
 
