@@ -101,22 +101,8 @@ header {
     }
 }
 
-.svg-small {
-    max-width: 30px;
-    margin: 0 1rem;
-
-    .outer-shape {
-        fill: $color-text;
-        transition: $transition-svg;
-    }
-
-    .inner-shape {
-        fill: white;
-    }
-
-    &:hover .outer-shape {
-        fill: #000;
-    }
+.svg {
+    height: 2.5rem;
 }
 
 // ============================================= 
