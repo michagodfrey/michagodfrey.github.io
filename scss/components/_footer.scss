@@ -31,16 +31,6 @@ footer {
     max-width: 440px;
 }
 
-.footer__top-link {
-    position: absolute;
-    bottom: 1rem;
-    color: $color-boneWhite;
-    text-decoration: underline;
-}
-
-@media (min-width: $break-m) {
-
-    .footer__top-link {
-        bottom: 2rem;
-    }
+.svg {
+    height: 2.5rem;
 }
