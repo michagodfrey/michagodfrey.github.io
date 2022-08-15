@@ -1,6 +1,6 @@
-// ============================================= 
-//              base styles                      
-// ============================================= 
+// =============================================
+//              base styles
+// =============================================
 
 * {
     font-family: $font-stack-primary;
@@ -21,9 +21,16 @@ main {
     margin-right: auto;
 }
 
-// ============================================= 
-//              add on styles                      
-// ============================================= 
+hr {
+    width: 90%;
+    opacity: .5;
+    border-top: none;
+    margin-top: 2rem;
+}
+
+// =============================================
+//              add on styles
+// =============================================
 
 .flex-column {
     display: flex;
@@ -49,12 +56,22 @@ main {
     flex-wrap: wrap;
 }
 
-// ============================================= 
-//              Grid System                      
-// ============================================= 
+.bottom-line {
+    margin-bottom: 3rem;
+}
 
-// this system was taken from a project on sass in the Treehouse 
-// Techdegree front end development course. 
+// colors
+
+.color-secondary {
+    color: $color-secondary;
+}
+
+// =============================================
+//              Grid System
+// =============================================
+
+// this system was taken from a project on sass in the Treehouse
+// Techdegree front end development course.
 
 .row {
     display: flex;

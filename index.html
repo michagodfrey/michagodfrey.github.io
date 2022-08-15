@@ -25,24 +25,23 @@
     <aside id="modal" class="modal">
       <div class="modal__content">
         <!-- message me form -->
-        <form id="form">
+        <form id="form-modal">
           <div class="flex-end">
             <span id="close-modal" class="modal__close">&#x2716;</span>
           </div>
-          <h2 class="text-primary-color centered">Thanks for reaching out. What can I help you with?</h2>
-          <input id="name" type="text" name="user_name" placeholder="Name">
-          <input id="email" type="email" name="user_email" placeholder="Email">
-          <textarea id="message" name="message" placeholder="Message"></textarea>
+          <h3 class="text-primary-color centered">Thanks for reaching out. What can I help you with?</h3>
+          <input id="name-modal" type="text" name="user_name" placeholder="Name">
+          <input id="email-modal" type="email" name="user_email" placeholder="Email">
+          <textarea id="message-modal" name="message" placeholder="Message"></textarea>
           <button type="submit" class="btn default centered">Send</button>
           <span>Email service provided by <a href="https://www.emailjs.com/" target="_blank" class="in-text-link">EmailJS</a></span>
         </form>
         <!-- loading animaton on send message -->
-        <div id="loading" class="animation-wrapper" style="display: none">
+        <div id="loading-modal" class="animation-wrapper" style="display: none">
           <img class="gif" src="images/loading-33.gif" alt="loading animation"/>
         </div>
       </div>
     </aside>
-
 
     <!-- header content -->
     <header>
@@ -55,8 +54,9 @@
           <div class="dropdown__menu dropdown__grid">
             <div>
               <div class="dropdown__links">
-                <a href="#about" class="dropdown__btn">About</a>
                 <a href="#projects" class="dropdown__btn">Projects</a>
+                <a href="#about" class="dropdown__btn">About</a>
+                <a href="#contact" class="dropdown__btn">Contact</a>
                 <a
                   href="https://docs.google.com/document/d/1R4C74Jm3oEx9XqhsnJkh-p3EUgEsXVTr/edit?usp=sharing&ouid=112309810791255870080&rtpof=true&sd=true"
                   target="_blank"
@@ -69,21 +69,21 @@
         </div>
 
       <div class="link-container">
-            <a class="nav-page" href="#about">About</a>
-          <a class="nav-page" href="#projects">Projects</a>
-          <a
-            class="nav-page"
-            href="https://docs.google.com/document/d/1R4C74Jm3oEx9XqhsnJkh-p3EUgEsXVTr/edit?usp=sharing&ouid=112309810791255870080&rtpof=true&sd=true"
-            target="_blank"
-            >Resume</a
-          >
+        <a class="nav-page" href="#projects">Projects</a>
+        <a class="nav-page" href="#about">About</a>
+        <a class="nav-page" href="#contact">Contact</a>
+        <a
+          class="nav-page"
+          href="https://docs.google.com/document/d/1R4C74Jm3oEx9XqhsnJkh-p3EUgEsXVTr/edit?usp=sharing&ouid=112309810791255870080&rtpof=true&sd=true"
+          target="_blank"
+          >Resume</a
+        >
       </div>
 
     </header>
 
-    <hr>
-
     <main>
+      <hr>
       <!-- intro section -->
       <div class="row">
         <div class="col-12">
@@ -364,7 +364,7 @@
           <div id="more-info">
             <div class="row col-6">
               <div>
-              <h2>Who am I?</h2>
+              <h3>Who am I?</h3>
               <p class="about__text">
                 I live in Australia, Melbourne metro area. Currently, I work in
                 plant biosecurity and one of the projects here is related to that.
@@ -375,7 +375,7 @@
               </div>
 
               <div>
-              <h2>My coding journey</h2>
+              <h3>My coding journey</h3>
               <p class="about__text">
                 I started learning coding and computer science as
                 a pastime during the Covid lockdowns. I enjoyed
@@ -404,112 +404,117 @@
         </div>
       </div>
 
-      <hr>
+      <hr class="bottom-line">
 
     </main>
 
     <!-- footer -->
     <footer>
-      <!--
-      <div class="message-container">
-        <button class="btn default" onclick=(openModal())>Let's Talk</button>
+      <h2 id="contact" class="color-secondary centered contact">Contact</h2>
+        <div class="message-container">
+          <button class="btn primary fat centered" onclick=(openModal())>Send me a message</button>
+          <p class="color-secondary centered">Or email me at:</p>
+          <p class="centered">
+            <a class="email" href="mailto: m.godfrey59@gmail.com">m.godfrey59@gmail.com</a>
+          </p>
+        </div>
+
+        <div class='social-container'>
+          <a href="https://twitter.com/Michael07865192" target="_blank">
+            <svg x="0px" y="0px" class="svg-icon"
+            	 viewBox="0 0 504.4 504.4" style="enable-background:new 0 0 504.4 504.4;" xml:space="preserve">
+            <g>
+            	<g>
+            		<path d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6
+            			C504,57,447.2,0.2,377.6,0.2z M377.2,189c0,2.8,0,5.6,0,8.4c0,84-64.8,180.8-183.6,180.8c-36.4,0-70.4-10.4-98.8-28.4
+            			c5.2,0.4,10,0.8,15.2,0.8c30.4,0,58-10,80-27.2c-28.4-0.4-52-18.8-60.4-44c4,0.8,8,1.2,12,1.2c6,0,12-0.8,17.2-2.4
+            			c-28.8-6-50.8-31.6-50.8-62.4V215c8,4.8,18.4,7.6,28.8,8c-17.2-11.2-28.8-30.8-28.8-52.8c0-11.6,3.2-22.4,8.8-32
+            			c32,38.4,79.2,63.6,132.8,66.4c-1.2-4.8-1.6-9.6-1.6-14.4c0-35.2,28.8-63.6,64.4-63.6c18.4,0,35.2,7.6,47.2,20
+            			c14.8-2.8,28.4-8,40.8-15.6c-4.8,14.8-15.2,27.2-28.4,35.2c13.2-1.6,25.6-4.8,37.2-10C400.4,169,389.6,180.2,377.2,189z"/>
+            	</g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/michael-godfrey-82258bb3/" target="_blank">
+            <svg x="0px" y="0px" class="svg-icon"
+            	 viewBox="0 0 504.4 504.4" style="enable-background:new 0 0 504.4 504.4;" xml:space="preserve">
+            <g>
+            	<g>
+            		<path d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6
+            			C504,57,447.2,0.2,377.6,0.2z M168,408.2H96v-208h72V408.2z M131.6,168.2c-20.4,0-36.8-16.4-36.8-36.8c0-20.4,16.4-36.8,36.8-36.8
+            			c20.4,0,36.8,16.4,36.8,36.8C168,151.8,151.6,168.2,131.6,168.2z M408.4,408.2H408h-60V307.4c0-24.4-3.2-55.6-36.4-55.6
+            			c-34,0-39.6,26.4-39.6,54v102.4h-60v-208h56v28h1.6c8.8-16,29.2-28.4,61.2-28.4c66,0,77.6,38,77.6,94.4V408.2z"/>
+            	</g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            </svg>
+          </a>
+          <a href="https://github.com/michagodfrey" target="_blank">
+            <svg class="svg-icon" height="40" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="40" data-view-component="true">
+              <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+          </a>
       </div>
-      -->
-      <div class='footer__social'>
-        <a href="https://twitter.com/Michael07865192" target="_blank">
-          <svg x="0px" y="0px"
-          	 viewBox="0 0 504.4 504.4" style="enable-background:new 0 0 504.4 504.4;" xml:space="preserve">
-          <g>
-          	<g>
-          		<path d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6
-          			C504,57,447.2,0.2,377.6,0.2z M377.2,189c0,2.8,0,5.6,0,8.4c0,84-64.8,180.8-183.6,180.8c-36.4,0-70.4-10.4-98.8-28.4
-          			c5.2,0.4,10,0.8,15.2,0.8c30.4,0,58-10,80-27.2c-28.4-0.4-52-18.8-60.4-44c4,0.8,8,1.2,12,1.2c6,0,12-0.8,17.2-2.4
-          			c-28.8-6-50.8-31.6-50.8-62.4V215c8,4.8,18.4,7.6,28.8,8c-17.2-11.2-28.8-30.8-28.8-52.8c0-11.6,3.2-22.4,8.8-32
-          			c32,38.4,79.2,63.6,132.8,66.4c-1.2-4.8-1.6-9.6-1.6-14.4c0-35.2,28.8-63.6,64.4-63.6c18.4,0,35.2,7.6,47.2,20
-          			c14.8-2.8,28.4-8,40.8-15.6c-4.8,14.8-15.2,27.2-28.4,35.2c13.2-1.6,25.6-4.8,37.2-10C400.4,169,389.6,180.2,377.2,189z"/>
-          	</g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/in/michael-godfrey-82258bb3/" target="_blank">
-          <svg x="0px" y="0px"
-          	 viewBox="0 0 504.4 504.4" style="enable-background:new 0 0 504.4 504.4;" xml:space="preserve">
-          <g>
-          	<g>
-          		<path d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6
-          			C504,57,447.2,0.2,377.6,0.2z M168,408.2H96v-208h72V408.2z M131.6,168.2c-20.4,0-36.8-16.4-36.8-36.8c0-20.4,16.4-36.8,36.8-36.8
-          			c20.4,0,36.8,16.4,36.8,36.8C168,151.8,151.6,168.2,131.6,168.2z M408.4,408.2H408h-60V307.4c0-24.4-3.2-55.6-36.4-55.6
-          			c-34,0-39.6,26.4-39.6,54v102.4h-60v-208h56v28h1.6c8.8-16,29.2-28.4,61.2-28.4c66,0,77.6,38,77.6,94.4V408.2z"/>
-          	</g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          </svg>
-        </a>
-        <a href="https://github.com/michagodfrey" target="_blank">
-          <svg height="40" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="40" data-view-component="true">
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-          </svg>
-        </a>
-      </div> 
+
     </footer>
 
   </body>
