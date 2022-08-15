@@ -51,6 +51,18 @@ h4 {
   margin-left: 10px;
 }
 
+@media (min-width: $break-m) {
+  .headline-section {
+    margin-top: 75px;
+  }
+}
+
+@media (min-width: $break-l) {
+  .headline-section {
+    margin-top: 125px;
+  }
+}
+
 .bold-emphasis {
   display: block;
   font-weight: 700;
