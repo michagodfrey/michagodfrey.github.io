@@ -32,16 +32,13 @@ $(document).ready(function () {
 // modal code adapted from example at w3 schools
 // https: //www.w3schools.com/howto/howto_css_modals.asp
 
-// Modal elements
 const modal = document.getElementById("modal");
 const closeModal = document.getElementById("close-modal");
 
-// Open modal 
 function openModal() {
   modal.style.display = "block";
 }
 
-// Close modal when the user clicks close button
 closeModal.onclick = function() {
   modal.style.display = "none";
 }
@@ -52,3 +49,26 @@ document.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// scroll animation adaped from https://alvarotrigo.com/blog/css-animations-scroll/
+
+function reveal() {
+  const reveals = document.querySelectorAll(".reveal");
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementVisible = 75;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    }
+    // else {
+    //   reveals[i].classList.remove("active");
+    // }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+// To check the scroll position on page load
+reveal();

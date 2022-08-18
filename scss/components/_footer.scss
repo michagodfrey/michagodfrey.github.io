@@ -15,7 +15,13 @@ footer {
     flex-direction: column;
 }
 
-.message-container a {
+.email-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.email-container a {
     font-size: 1.25rem;
     color: $color-boneWhite;
 }
@@ -23,7 +29,7 @@ footer {
 .social-container {
     display: flex;
     justify-content: space-evenly;
-    margin: 3rem auto;
+    margin: 3rem auto 1.5rem;
     width: 100%;
     max-width: 440px;
 }
@@ -46,4 +52,36 @@ svg:hover path {
 
 .svg-icon:hover {
     fill: $color-boneWhite;
+}
+
+@media (min-width: $break-l) {
+    .footer-content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .social-container {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 400px;
+        padding-left: 50px;
+    }
+
+    .social-container a {
+        max-height: 2.5rem;
+    }
+
+    .message-container {
+        flex-direction: row;
+    }
+
+    .message-container button {
+        max-width: 100%;
+    }
+
+    .email-container p {
+        padding: 0;
+    }
 }

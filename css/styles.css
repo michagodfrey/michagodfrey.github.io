@@ -867,7 +867,13 @@ footer {
   flex-direction: column;
 }
 
-.message-container a {
+.email-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.email-container a {
   font-size: 1.25rem;
   color: #f2f3f4;
 }
@@ -875,7 +881,7 @@ footer {
 .social-container {
   display: flex;
   justify-content: space-evenly;
-  margin: 3rem auto;
+  margin: 3rem auto 1.5rem;
   width: 100%;
   max-width: 440px;
 }
@@ -898,6 +904,33 @@ svg:hover path {
 
 .svg-icon:hover {
   fill: #f2f3f4;
+}
+
+@media (min-width: 1024px) {
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .social-container {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 400px;
+    padding-left: 50px;
+  }
+  .social-container a {
+    max-height: 2.5rem;
+  }
+  .message-container {
+    flex-direction: row;
+  }
+  .message-container button {
+    max-width: 100%;
+  }
+  .email-container p {
+    padding: 0;
+  }
 }
 
 .intro {
@@ -1000,5 +1033,17 @@ svg:hover path {
 
 .project__link {
   display: none;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */
