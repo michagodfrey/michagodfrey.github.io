@@ -55,9 +55,15 @@ svg:hover path {
 }
 
 @media (min-width: $break-l) {
+
+    footer {
+        min-height: 300px;
+        justify-content: center;
+    }
+
     .footer-content {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .social-container {

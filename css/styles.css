@@ -3,6 +3,7 @@
   font-family: "Oxygen", "Lato", sans-serif;
   color: #696969;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,9 +20,7 @@ main {
 }
 
 hr {
-  width: 90%;
   opacity: .5;
-  border-top: none;
 }
 
 @media (min-width: 768px) {
@@ -907,9 +906,13 @@ svg:hover path {
 }
 
 @media (min-width: 1024px) {
+  footer {
+    min-height: 300px;
+    justify-content: center;
+  }
   .footer-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
   .social-container {
     margin: 0;

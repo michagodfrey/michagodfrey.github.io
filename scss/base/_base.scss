@@ -6,6 +6,7 @@
     font-family: $font-stack-primary;
     color: $color-text;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,9 +23,9 @@ main {
 }
 
 hr {
-    width: 90%;
+    // width: 90%;
     opacity: .5;
-    border-top: none;
+    // border-top: none;
 }
 
 @media (min-width: $break-m) {
