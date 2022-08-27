@@ -65,3 +65,32 @@
         border-radius: 5px;
     }
 }
+
+// =============================================
+//     Tech icons from https: //devicon.dev/
+// =============================================
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tech-icon {
+    max-height: 50px;
+    margin: .5rem;
+}
+
+@media (min-width: $break-m) {
+    .tech-icon {
+        max-height: 75px;
+    }
+    
+}
+
+@media (min-width: $break-l) {
+    .tech-icon {
+        max-height: 100px;
+    }
+
+}

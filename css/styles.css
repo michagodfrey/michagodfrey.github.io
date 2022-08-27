@@ -59,6 +59,10 @@ hr {
   flex-wrap: wrap;
 }
 
+.flex-center {
+  justify-content: center;
+}
+
 .bottom-line {
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -991,6 +995,29 @@ svg:hover path {
   }
 }
 
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tech-icon {
+  max-height: 50px;
+  margin: .5rem;
+}
+
+@media (min-width: 768px) {
+  .tech-icon {
+    max-height: 75px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tech-icon {
+    max-height: 100px;
+  }
+}
+
 .project {
   position: relative;
 }
@@ -1036,6 +1063,15 @@ svg:hover path {
 
 .project__link {
   display: none;
+}
+
+.project__icon-container {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.white {
+  color: #f2f3f4;
 }
 
 .reveal {
