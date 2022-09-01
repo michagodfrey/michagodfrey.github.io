@@ -4,6 +4,8 @@
 
 .project {
     position: relative;
+    max-width: 500px;
+    margin: auto;
 
     &:hover .project__overlay {
         height: 100%;
@@ -12,6 +14,10 @@
 
     &:hover .project__link {
         display: block;
+    }
+
+    @media (min-width: $break-l) {
+        max-width: 100%;
     }
 }
 
@@ -35,7 +41,10 @@
 .project__title {
     margin-top: .25rem;
     color: $color-boneWhite;
-    font-size: 1.5rem;
+    
+    @media (min-width: $break-l) {
+        font-size: 1.5rem;
+    }
 }
 
 .project__text {
@@ -47,12 +56,21 @@
 
 .project__link {
     display: none;
+    background-color: $color-secondary;
+    color: $color-primary;
+    font-weight: bolder;
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 10px;
+
+    &:hover {
+            background-color: #ffde81;
+        }
 }
 
-
 .project__icon-container {
-    font-size: 3rem;
-    margin: 1rem;
+    font-size: 2rem;
+    margin: .25rem;
 }
 
 .white {

@@ -38,6 +38,17 @@ h4 {
   }
 }
 
+.blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+  margin: .5rem 2.5rem;
+  padding: .5rem 1.25rem;
+  border-left: .5rem solid $color-primary;
+  background-color: #ffe291;
+  border-radius: 5px 50px 50px 5px;
+}
+
 // =============================================
 //              add on classes
 // =============================================
@@ -49,6 +60,7 @@ h4 {
 .headline-section {
   color: $color-primary;
   margin-left: 10px;
+  margin-top: 45px;
 }
 
 @media (min-width: $break-m) {
@@ -63,8 +75,9 @@ h4 {
   }
 }
 
+
+
 .bold-emphasis {
-  display: block;
   font-weight: 700;
 }
 

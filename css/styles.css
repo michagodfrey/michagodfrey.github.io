@@ -176,6 +176,17 @@ h4 {
   color: #422057FF;
 }
 
+.blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+  margin: .5rem 2.5rem;
+  padding: .5rem 1.25rem;
+  border-left: 0.5rem solid #00539CFF;
+  background-color: #ffe291;
+  border-radius: 5px 50px 50px 5px;
+}
+
 .primary-color {
   color: #00539CFF;
 }
@@ -183,6 +194,7 @@ h4 {
 .headline-section {
   color: #00539CFF;
   margin-left: 10px;
+  margin-top: 45px;
 }
 
 @media (min-width: 768px) {
@@ -198,7 +210,6 @@ h4 {
 }
 
 .bold-emphasis {
-  display: block;
   font-weight: 700;
 }
 
@@ -588,6 +599,16 @@ template {
   background-color: #ffde81;
 }
 
+.secondary {
+  border: 1px solid #00539CFF;
+  color: #FFD662FF;
+  background-color: #00539CFF;
+}
+
+.secondary:hover {
+  background-color: #3375b0;
+}
+
 .centered {
   display: block;
   margin-left: auto;
@@ -605,41 +626,6 @@ template {
 
 .default:hover {
   background-color: #839deb;
-}
-
-.error {
-  color: #f2f3f4;
-  background-color: #e83535;
-}
-
-.error:hover {
-  background-color: #f07a7a;
-}
-
-.info {
-  color: #f2f3f4;
-  background-color: #927bc1;
-}
-
-.info:hover {
-  background-color: #bdafd9;
-}
-
-.success {
-  color: #f2f3f4;
-  background-color: #228b22;
-}
-
-.success:hover {
-  background-color: #31c831;
-}
-
-.warning {
-  background-color: #fd7856;
-}
-
-.warning:hover {
-  background-color: #feb4a2;
 }
 
 form {
@@ -837,6 +823,25 @@ header {
   }
 }
 
+#about {
+  background-color: #FFD662FF;
+  border: solid 1px #00539CFF;
+  border-radius: 50px 5px 50px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
+}
+
+@media (min-width: 768px) {
+  #about {
+    margin-top: 75px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #about {
+    margin-top: 125px;
+  }
+}
+
 .about__text {
   text-align: justify;
   text-justify: inter-word;
@@ -956,6 +961,12 @@ svg:hover path {
   font-weight: 300;
 }
 
+@media (min-width: 768px) {
+  .intro__title {
+    min-width: 300px;
+  }
+}
+
 .intro__subtitle {
   grid-area: subtitle;
   background-color: #00539CFF;
@@ -1020,6 +1031,8 @@ svg:hover path {
 
 .project {
   position: relative;
+  max-width: 500px;
+  margin: auto;
 }
 
 .project:hover .project__overlay {
@@ -1029,6 +1042,12 @@ svg:hover path {
 
 .project:hover .project__link {
   display: block;
+}
+
+@media (min-width: 1024px) {
+  .project {
+    max-width: 100%;
+  }
 }
 
 .project__img {
@@ -1051,7 +1070,12 @@ svg:hover path {
 .project__title {
   margin-top: .25rem;
   color: #f2f3f4;
-  font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .project__title {
+    font-size: 1.5rem;
+  }
 }
 
 .project__text {
@@ -1063,11 +1087,21 @@ svg:hover path {
 
 .project__link {
   display: none;
+  background-color: #FFD662FF;
+  color: #00539CFF;
+  font-weight: bolder;
+  padding: .5rem;
+  margin: .5rem;
+  border-radius: 10px;
+}
+
+.project__link:hover {
+  background-color: #ffde81;
 }
 
 .project__icon-container {
-  font-size: 3rem;
-  margin: 1rem;
+  font-size: 2rem;
+  margin: .25rem;
 }
 
 .white {
