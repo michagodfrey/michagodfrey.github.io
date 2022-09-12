@@ -18,6 +18,10 @@ header {
     position: relative;
     margin: auto 0;
     z-index: 1;
+
+    @include tablet {
+        display: none;
+    }
 }
 
 .dropdown__btn {
@@ -74,6 +78,12 @@ header {
 .link-container {
     display: none;
     align-items: center;
+
+    @include tablet {
+        display: flex;
+        flex-basis: 80%;
+        justify-content: space-evenly;
+    }
 }
 
 .nav {
@@ -93,22 +103,4 @@ header {
             color: #000;
         }
     }
-}
-
-// ============================================= 
-//       media queries                 
-// ============================================= 
-
-@media (min-width: $break-m) {
-
-    .dropdown {
-        display: none;
-    }
-    
-    .link-container {
-        display: flex;
-        flex-basis: 80%;
-        justify-content: space-evenly;
-    }
-
 }

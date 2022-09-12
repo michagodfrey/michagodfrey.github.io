@@ -22,8 +22,18 @@ $color-button-warning: #fd7856;
 $font-stack-primary: 'Oxygen', 'Lato', sans-serif;
 
 // Screen width breakpoints
-$break-m: 768px;
-$break-l: 1024px;
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
 
 // Animations
 $transition: color .2s ease;

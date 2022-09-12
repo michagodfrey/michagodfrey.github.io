@@ -61,21 +61,15 @@ h4 {
   color: $color-primary;
   margin-left: 10px;
   margin-top: 45px;
-}
 
-@media (min-width: $break-m) {
-  .headline-section {
+  @include tablet {
     margin-top: 75px;
   }
-}
 
-@media (min-width: $break-l) {
-  .headline-section {
+  @include desktop {
     margin-top: 125px;
   }
 }
-
-
 
 .bold-emphasis {
   font-weight: 700;

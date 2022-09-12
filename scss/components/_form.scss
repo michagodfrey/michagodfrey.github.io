@@ -23,20 +23,15 @@ textarea {
   margin: .5rem auto;
   padding: .75rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+
+  @include tablet {
+    width: 80%;
+  }
 }
 
 textarea {
   height: 100px;
   margin-bottom: 15px;
-}
-
-@media (min-width: $break-m) {
-
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 80%;
-  }
 }
 
 // loading animation on send

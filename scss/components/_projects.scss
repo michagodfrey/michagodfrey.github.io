@@ -16,7 +16,7 @@
         display: block;
     }
 
-    @media (min-width: $break-l) {
+    @include desktop {
         max-width: 100%;
     }
 }
@@ -42,7 +42,7 @@
     margin-top: .25rem;
     color: $color-boneWhite;
     
-    @media (min-width: $break-l) {
+    @include desktop {
         font-size: 1.5rem;
     }
 }
