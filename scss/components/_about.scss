@@ -15,14 +15,13 @@
 
 .about__text {
     text-align: justify;
-    text-justify: inter-word;
     padding: 1rem;
 }
 
 .about__text--center {
     font-size: 1.25rem;
     max-width: 800px;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
 }
 
 // make more info hidden by default
