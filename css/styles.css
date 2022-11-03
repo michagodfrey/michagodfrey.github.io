@@ -20,15 +20,13 @@ main {
 }
 
 hr {
-  opacity: .5;
+  opacity: 0.5;
 }
-
 @media (min-width: 768px) {
   hr {
     margin-bottom: 2.5rem;
   }
 }
-
 @media (min-width: 1024px) {
   hr {
     margin-bottom: 5rem;
@@ -68,7 +66,6 @@ hr {
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
-
 @media (min-width: 1024px) {
   .bottom-line {
     margin-top: 4rem;
@@ -77,7 +74,7 @@ hr {
 }
 
 .color-secondary {
-  color: #FFD662FF;
+  color: #ffd662;
 }
 
 .row {
@@ -85,7 +82,6 @@ hr {
   flex-direction: column;
   padding: 1em 10px;
 }
-
 @media (min-width: 768px) {
   .row {
     flex-direction: row;
@@ -99,7 +95,6 @@ hr {
   padding: 10px;
   border-radius: 5px;
 }
-
 @media (min-width: 768px) {
   [class^=col] {
     display: flex;
@@ -120,7 +115,7 @@ hr {
     flex-basis: 16.67%;
   }
   .col-3 {
-    flex-basis: 25.00%;
+    flex-basis: 25%;
   }
   .col-4 {
     flex-basis: 33.33%;
@@ -129,7 +124,7 @@ hr {
     flex-basis: 41.67%;
   }
   .col-6 {
-    flex-basis: 50.00%;
+    flex-basis: 50%;
   }
   .col-7 {
     flex-basis: 58.33%;
@@ -138,7 +133,7 @@ hr {
     flex-basis: 66.67%;
   }
   .col-9 {
-    flex-basis: 75.00%;
+    flex-basis: 75%;
   }
   .col-10 {
     flex-basis: 83.33%;
@@ -150,7 +145,6 @@ hr {
     flex-basis: 100%;
   }
 }
-
 p {
   line-height: 1.45em;
   padding: 0 10px;
@@ -165,7 +159,7 @@ a {
 
 h2, h3 {
   font-weight: 700;
-  color: #00539CFF;
+  color: #00539c;
   padding: 0 10px;
 }
 
@@ -175,41 +169,39 @@ h4 {
   margin: 0;
 }
 
-.in-text-link {
-  color: #00539CFF;
-}
-
-.in-text-link:visited {
-  color: #422057FF;
-}
-
-.blockquote {
+blockquote {
   font-size: 1.5em;
   font-weight: 300;
   font-style: italic;
-  margin: .5rem 2.5rem;
-  padding: .5rem 1.25rem;
-  border-left: 0.5rem solid #00539CFF;
+  margin: 0.5rem 2.5rem;
+  padding: 0.5rem 1.25rem;
+  border-left: 0.5rem solid #00539c;
   background-color: #ffe291;
   border-radius: 5px 50px 50px 5px;
+  color: black;
+}
+
+.in-text-link {
+  color: #00539c;
+}
+.in-text-link:visited {
+  color: #422057;
 }
 
 .primary-color {
-  color: #00539CFF;
+  color: #00539c;
 }
 
 .headline-section {
-  color: #00539CFF;
+  color: #00539c;
   margin-left: 10px;
   margin-top: 45px;
 }
-
 @media (min-width: 768px) {
   .headline-section {
     margin-top: 75px;
   }
 }
-
 @media (min-width: 1024px) {
   .headline-section {
     margin-top: 125px;
@@ -225,19 +217,19 @@ h4 {
 }
 
 .text-primary-color {
-  color: #00539CFF;
+  color: #00539c;
 }
 
 .text-secondary-color {
-  color: #FFD662FF;
+  color: #ffd662;
 }
 
 .background-primary-color {
-  background-color: #00539CFF;
+  background-color: #00539c;
 }
 
 .background-secondary-color {
-  background-color: #FFD662FF;
+  background-color: #ffd662;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -248,10 +240,8 @@ h4 {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -286,12 +276,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -299,10 +286,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -319,12 +304,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -342,10 +324,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -395,14 +375,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -410,8 +386,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -420,8 +395,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -429,9 +403,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -439,9 +413,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -450,9 +424,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -470,18 +444,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -502,19 +470,17 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -522,17 +488,15 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -541,10 +505,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -582,36 +544,33 @@ template {
 .btn {
   text-align: center;
   font-weight: bolder;
-  color: #00539CFF;
+  color: #00539c;
   border: none;
-  padding: .5rem;
-  margin: .5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
   text-transform: uppercase;
   min-width: 120px;
   max-width: 50%;
   border-radius: 50px;
   cursor: pointer;
 }
-
 .btn:hover {
-  transition-duration: .2s;
+  transition-duration: 0.2s;
 }
 
 .primary {
-  border: 1px solid #00539CFF;
-  background-color: #FFD662FF;
+  border: 1px solid #00539c;
+  background-color: #ffd662;
 }
-
 .primary:hover {
   background-color: #ffde81;
 }
 
 .secondary {
-  border: 1px solid #00539CFF;
-  color: #FFD662FF;
-  background-color: #00539CFF;
+  border: 1px solid #00539c;
+  color: #ffd662;
+  background-color: #00539c;
 }
-
 .secondary:hover {
   background-color: #3375b0;
 }
@@ -630,7 +589,6 @@ template {
   color: #f2f3f4;
   background-color: #4169e1;
 }
-
 .default:hover {
   background-color: #839deb;
 }
@@ -638,30 +596,29 @@ template {
 form {
   display: flex;
   flex-direction: column;
-  background-color: #FFD662FF;
-  border: solid 1px #00539CFF;
+  background-color: #ffd662;
+  border: solid 1px #00539c;
   border-radius: 10px;
   width: 100%;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
 }
 
-input[type="text"],
-input[type="email"],
+input[type=text],
+input[type=email],
 textarea {
   display: block;
   width: 100%;
   border: solid 1px #696969;
-  border-radius: .5rem;
-  margin: .5rem auto;
-  padding: .75rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem auto;
+  padding: 0.75rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
-
 @media (min-width: 768px) {
-  input[type="text"],
-  input[type="email"],
-  textarea {
+  input[type=text],
+input[type=email],
+textarea {
     width: 80%;
   }
 }
@@ -693,7 +650,7 @@ textarea {
   height: 100%;
   overflow: auto;
   /* Fallback color */
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   /* backgound color with opacity */
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -712,18 +669,26 @@ textarea {
 
 .modal__close {
   font-size: 2rem;
-  padding-right: .5rem;
+  padding-right: 0.5rem;
   cursor: pointer;
   color: #e83535;
   transition: color 0.2s ease;
 }
-
 .modal__close:hover {
   color: #f07a7a;
 }
 
 /* Slide down animation */
-
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 @keyframes animatetop {
   from {
     top: -300px;
@@ -734,7 +699,6 @@ textarea {
     opacity: 1;
   }
 }
-
 header {
   display: flex;
   justify-content: space-between;
@@ -748,7 +712,6 @@ header {
   margin: auto 0;
   z-index: 1;
 }
-
 @media (min-width: 768px) {
   .dropdown {
     display: none;
@@ -772,10 +735,10 @@ header {
 .dropdown__menu {
   position: absolute;
   right: 0;
-  top: calc(100% + .25rem);
+  top: calc(100% + 0.25rem);
   background-color: white;
-  padding: .75rem;
-  border-radius: .25rem;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
@@ -806,7 +769,6 @@ header {
   display: none;
   align-items: center;
 }
-
 @media (min-width: 768px) {
   .link-container {
     display: flex;
@@ -819,33 +781,29 @@ header {
   padding-left: 0;
   display: none;
 }
-
 .nav-page {
   text-align: center;
   padding: 10px 20px;
   display: block;
   width: fit-content;
-  transition: color .2s ease-in-out;
+  transition: color 0.2s ease-in-out;
   font-size: 1.25rem;
 }
-
 .nav-page:hover {
   color: #000;
 }
 
 #about {
-  background-color: #FFD662FF;
-  border: solid 1px #00539CFF;
+  background-color: #ffd662;
+  border: solid 1px #00539c;
   border-radius: 50px 5px 50px 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
 }
-
 @media (min-width: 768px) {
   #about {
     margin-top: 75px;
   }
 }
-
 @media (min-width: 1024px) {
   #about {
     margin-top: 125px;
@@ -868,13 +826,12 @@ header {
 }
 
 footer {
-  background-color: #00539CFF;
+  background-color: #00539c;
   display: flex;
   flex-direction: column;
   box-shadow: inset 0 0 10px 10px rgba(0, 10, 10, 0.4);
   padding: 0 50px 50px 50px;
 }
-
 @media (min-width: 1024px) {
   footer {
     min-height: 300px;
@@ -916,7 +873,6 @@ footer {
   width: 100%;
   max-width: 440px;
 }
-
 @media (min-width: 1024px) {
   .social-container {
     margin: 0;
@@ -955,7 +911,7 @@ footer {
 svg {
   height: 2.5rem;
   cursor: pointer;
-  fill: #FFD662FF;
+  fill: #ffd662;
 }
 
 svg:hover path {
@@ -965,7 +921,7 @@ svg:hover path {
 .svg-icon {
   height: 2.5rem;
   cursor: pointer;
-  fill: #FFD662FF;
+  fill: #ffd662;
 }
 
 .svg-icon:hover {
@@ -976,13 +932,12 @@ svg:hover path {
   margin: 0 auto;
   padding: 10px;
   position: relative;
-  background-color: #FFD662FF;
-  border: solid 1px #00539CFF;
+  background-color: #ffd662;
+  border: solid 1px #00539c;
   border-radius: 5px 50px 5px 50px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
   z-index: -1;
 }
-
 @media (min-width: 768px) {
   .intro {
     display: grid;
@@ -997,7 +952,6 @@ svg:hover path {
   grid-area: title;
   font-weight: 300;
 }
-
 @media (min-width: 768px) {
   .intro__title {
     min-width: 300px;
@@ -1006,8 +960,8 @@ svg:hover path {
 
 .intro__subtitle {
   grid-area: subtitle;
-  background-color: #00539CFF;
-  color: #FFD662FF;
+  background-color: #00539c;
+  color: #ffd662;
   font-size: 24px;
   margin: -10px 0 5px 0;
   padding: 5px;
@@ -1015,14 +969,13 @@ svg:hover path {
   z-index: 1;
   grid-column: 1/3;
 }
-
 @media (min-width: 768px) {
   .intro__subtitle {
     text-align: right;
     align-self: start;
     position: absolute;
     left: -1.5em;
-    width: calc(100% + 1.5em);
+    width: calc(100% + 3.6rem);
   }
 }
 
@@ -1032,11 +985,19 @@ svg:hover path {
   box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
   z-index: 2;
 }
-
 @media (min-width: 768px) {
   .intro__img {
     border-radius: 5px;
   }
+}
+
+.blockquote-first {
+  color: #ffd662;
+  background-color: #00539c;
+  border-left: 0.5rem solid #ffd662;
+}
+.blockquote-first em {
+  color: #ffd662;
 }
 
 .tech-stack {
@@ -1047,15 +1008,13 @@ svg:hover path {
 
 .tech-icon {
   max-height: 50px;
-  margin: .5rem;
+  margin: 0.5rem;
 }
-
 @media (min-width: 768px) {
   .tech-icon {
     max-height: 75px;
   }
 }
-
 @media (min-width: 1024px) {
   .tech-icon {
     max-height: 100px;
@@ -1067,16 +1026,13 @@ svg:hover path {
   max-width: 500px;
   margin: auto;
 }
-
 .project:hover .project__overlay {
   height: 100%;
   justify-content: space-around;
 }
-
 .project:hover .project__link {
   display: block;
 }
-
 @media (min-width: 1024px) {
   .project {
     max-width: 100%;
@@ -1101,10 +1057,9 @@ svg:hover path {
 }
 
 .project__title {
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   color: #f2f3f4;
 }
-
 @media (min-width: 1024px) {
   .project__title {
     font-size: 1.5rem;
@@ -1112,7 +1067,7 @@ svg:hover path {
 }
 
 .project__text {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   color: #f2f3f4;
   text-align: center;
   max-width: 500px;
@@ -1120,25 +1075,38 @@ svg:hover path {
 
 .project__link {
   display: none;
-  background-color: #FFD662FF;
-  color: #00539CFF;
+  background-color: #ffd662;
+  color: #00539c;
   font-weight: bolder;
-  padding: .5rem;
-  margin: .5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
   border-radius: 10px;
 }
-
 .project__link:hover {
   background-color: #ffde81;
 }
 
 .project__icon-container {
   font-size: 2rem;
-  margin: .25rem;
+  margin: 0.25rem;
 }
 
-.white {
-  color: #f2f3f4;
+.project__description {
+  margin: 1rem auto 0;
+  padding: 0.5rem;
+  text-align: justify;
+  max-width: 500px;
+}
+@media (min-width: 768px) {
+  .project__description {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  .project__description {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
 }
 
 .reveal {
@@ -1151,5 +1119,4 @@ svg:hover path {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

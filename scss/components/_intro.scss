@@ -51,7 +51,7 @@
         align-self: start;
         position: absolute;
         left: -1.5em;
-        width: calc(100% + 1.5em);
+        width: calc(100% + 3.6rem);
     }
 }
 
@@ -63,6 +63,16 @@
 
     @include tablet {
         border-radius: 5px;
+    }
+}
+
+.blockquote-first {
+    color: $color-secondary;
+    background-color: $color-primary;
+    border-left: .5rem solid $color-secondary;
+
+    em {
+        color: $color-secondary;
     }
 }
 

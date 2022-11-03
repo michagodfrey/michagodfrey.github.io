@@ -26,6 +26,18 @@ h4 {
   margin: 0;
 }
 
+blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+  margin: .5rem 2.5rem;
+  padding: .5rem 1.25rem;
+  border-left: .5rem solid $color-primary;
+  background-color: #ffe291;
+  border-radius: 5px 50px 50px 5px;
+  color: black;
+}
+
 // =============================================
 //              classes
 // =============================================
@@ -36,17 +48,6 @@ h4 {
   &:visited {
     color: $color-link-visited;
   }
-}
-
-.blockquote {
-  font-size: 1.5em;
-  font-weight: 300;
-  font-style: italic;
-  margin: .5rem 2.5rem;
-  padding: .5rem 1.25rem;
-  border-left: .5rem solid $color-primary;
-  background-color: #ffe291;
-  border-radius: 5px 50px 50px 5px;
 }
 
 // =============================================
