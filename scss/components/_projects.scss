@@ -23,6 +23,7 @@
 
 .project__img {
     max-width: 100%;
+    max-height: 310px;
 }
 
 .project__overlay {
@@ -75,7 +76,7 @@
 
 .project__description {
     margin: 1rem auto 0;
-    padding: .5rem;
+    padding: .5rem auto 0;
     text-align: justify;
     max-width: 500px;
 
