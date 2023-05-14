@@ -10,7 +10,7 @@ const Work = () => {
             <div className="max-w-screen-xl mx-auto px-8 lg:px-24 flex flex-col md:justify-center w-full h-full">
                 <div className="pb-8">
                     <h2 className="text-4xl inline border-b-4 border-emerald-600">Work</h2>
-                    <p className="py-6">Tap or hover over image for more infomation and links</p>
+                    <p className="py-6">Tap or hover over the images for more information and links</p>
                 </div>
                 <div className="grid md:grid-cols-2 gap-4">
                     {projectData.map((project) => {
@@ -26,10 +26,10 @@ const Work = () => {
                                         {project.caption}
                                     </span>
                                     <div className="mt-[5%]">
-                                        <a href={project.demo}>
+                                        <a href={project.demo} target="_blank">
                                             <button className="text-center rounded-lg px-4 py-1 lg:py-3 my-2 bg-white text-gray-700 text-lg hover:bg-emerald-600 hover:text-white">Demo</button>
                                         </a>
-                                        <a href={project.code}>
+                                        <a href={project.code} target="_blank">
                                             <button className="text-center rounded-lg px-4 py-1 lg:py-3 ml-2 lg:ml-4 border text-white text-lg hover:bg-emerald-600 hover:border-emerald-600">Code</button>
                                         </a>
                                     </div>
