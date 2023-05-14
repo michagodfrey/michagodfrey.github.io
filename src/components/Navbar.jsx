@@ -39,7 +39,7 @@ const Navbar = () => {
     return (
         <div className={`${shadowClass} fixed w-full h-[96px] flex justify-between items-center px-8 bg-[#0a192f] z-10`}>
             <div>
-                <img src={Logo} />
+                <img src={Logo} alt="MG" />
             </div>
 
             {/* desktop menu */}

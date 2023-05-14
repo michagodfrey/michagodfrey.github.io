@@ -6,7 +6,7 @@ const Work = () => {
     const projectData = [...data];
 
     return (
-        <div name="work" className="h-screen mb-[100%] md:mb-0">
+        <div name="work" className="h-screen mb-[120%] md:mb-0">
             <div className="max-w-screen-xl mx-auto px-8 lg:px-24 flex flex-col md:justify-center w-full h-full">
                 <div className="pb-8">
                     <h2 className="text-4xl inline border-b-4 border-emerald-600">Work</h2>
@@ -26,10 +26,10 @@ const Work = () => {
                                         {project.caption}
                                     </span>
                                     <div className="mt-[5%]">
-                                        <a href={project.demo} target="_blank">
+                                        <a href={project.demo} target="_blank" rel="noreferrer">
                                             <button className="text-center rounded-lg px-4 py-1 lg:py-3 my-2 bg-white text-gray-700 text-lg hover:bg-emerald-600 hover:text-white">Demo</button>
                                         </a>
-                                        <a href={project.code} target="_blank">
+                                        <a href={project.code} target="_blank" rel="noreferrer">
                                             <button className="text-center rounded-lg px-4 py-1 lg:py-3 ml-2 lg:ml-4 border text-white text-lg hover:bg-emerald-600 hover:border-emerald-600">Code</button>
                                         </a>
                                     </div>
