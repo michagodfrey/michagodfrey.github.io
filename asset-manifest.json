@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.044abea1.css",
+    "main.js": "/static/js/main.34540cd4.js",
+    "static/media/bootstrap.webp": "/static/media/bootstrap.5585775486219e08afd1.webp",
+    "static/media/react.webp": "/static/media/react.eabf4c82eff971c8b66a.webp",
+    "static/media/github.webp": "/static/media/github.45e7d2ce22c2150e94e1.webp",
+    "static/media/tailwind.webp": "/static/media/tailwind.a1e5c053349fc03215af.webp",
+    "static/media/firebase.webp": "/static/media/firebase.b5a7ce6afa34cb3f0f1a.webp",
+    "static/media/html.webp": "/static/media/html.97582132a45292f3facd.webp",
+    "static/media/css.webp": "/static/media/css.fdc63e348d0213f680c7.webp",
+    "static/media/javascript.webp": "/static/media/javascript.7ef5ef6eecc30b71ca21.webp",
+    "index.html": "/index.html",
+    "static/media/MG.webp": "/static/media/MG.af60087c289060fa5226.webp",
+    "main.044abea1.css.map": "/static/css/main.044abea1.css.map",
+    "main.34540cd4.js.map": "/static/js/main.34540cd4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.044abea1.css",
+    "static/js/main.34540cd4.js"
+  ]
+}
