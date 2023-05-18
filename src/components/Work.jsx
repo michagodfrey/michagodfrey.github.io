@@ -6,8 +6,8 @@ const Work = () => {
     const projectData = [...data];
 
     return (
-        <div name="work" className="h-screen mb-[120%] md:mb-0">
-            <div className="max-w-screen-xl mx-auto px-8 lg:px-24 flex flex-col md:justify-center w-full h-full">
+        <div name="work" className="min-h-screen"> 
+            <div className="max-w-screen-xl mx-auto px-8 lg:px-24 lg:pt-24 flex flex-col w-full h-full"> 
                 <div className="pb-8">
                     <h2 className="text-4xl inline border-b-4 border-emerald-600">Work</h2>
                     <p className="py-6">Tap or hover over the images for more information and links</p>
