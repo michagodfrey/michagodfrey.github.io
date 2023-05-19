@@ -21,7 +21,7 @@ const Home = () => {
                 </p>
                 <div>
                     <button>
-                        <Link to="work" smooth={true} duration={500}  offset={offsetValue} className="text-white border-2 px-6 py-3 my-2 rounded-lg flex items-center group hover:bg-emerald-600 hover:border-emerald-600">
+                        <Link to="work" smooth={true} duration={500} offset={offsetValue} className="text-white border-2 px-6 py-3 my-2 rounded-lg flex items-center group hover:bg-emerald-600 hover:border-emerald-600">
                             See Work
                             <span className="ml-3 group-hover:rotate-90 duration-300">
                                 <HiArrowNarrowRight />
