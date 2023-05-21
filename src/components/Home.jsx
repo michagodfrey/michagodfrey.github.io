@@ -9,8 +9,8 @@ const Home = () => {
     const offsetValue = isLargeScreen ? 0 : -110;
 
     return (
-        <div name="home" className="h-screen">
-            <div className="max-w-screen-xl mx-auto px-8 lg:px-24 flex flex-col justify-center h-full w-full">
+        <div name="home" className="h-screen py-8">
+            <div className="max-w-screen-xl mx-auto px-8 lg:px-36 flex flex-col justify-center h-full w-full">
                 <p className="text-emerald-600">Hi, my name is</p>
                 <h1 className="text-4xl sm:text-7xl text-[#ccd6f6]">Michael Godfrey</h1>
                 <p className="text-2xl sm:text-5xl text-[#8892b0]">I'm a frontend web developer</p>

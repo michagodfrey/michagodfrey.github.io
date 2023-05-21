@@ -47,27 +47,27 @@ const Navbar = () => {
             {/* desktop menu */}
             <ul className="hidden lg:flex text-2xl">
                 <li className="mx-6 cursor-pointer">
-                    <Link to="home" smooth duration={500} spy activeClass="border-b-4 border-emerald-600">
+                    <Link to="home" smooth duration={500} offset={-96} spy activeClass="border-b-4 border-emerald-600">
                         Home
                     </Link>
                 </li>
                 <li className="mx-6 cursor-pointer">
-                    <Link to="about" smooth duration={500} spy activeClass="border-b-4 border-emerald-600">
+                    <Link to="about" smooth duration={500} offset={-96} spy activeClass="border-b-4 border-emerald-600">
                         About
                     </Link>
                 </li>
                 <li className="mx-6 cursor-pointer">
-                    <Link to="skills" smooth duration={500} spy activeClass="border-b-4 border-emerald-600">
+                    <Link to="skills" smooth duration={500} offset={-96} spy activeClass="border-b-4 border-emerald-600">
                         Skills
                     </Link>
                 </li>
                 <li className="mx-6 cursor-pointer">
-                    <Link to="work" smooth duration={500} spy activeClass="border-b-4 border-emerald-600">
+                    <Link to="work" smooth duration={500} offset={-96} spy activeClass="border-b-4 border-emerald-600">
                         Work
                     </Link>
                 </li>
                 <li className="mx-6 cursor-pointer">
-                    <Link to="contact" smooth duration={500} spy activeClass="border-b-4 border-emerald-600">
+                    <Link to="contact" smooth duration={500} offset={-96} spy activeClass="border-b-4 border-emerald-600">
                         Contact
                     </Link>
                 </li>
@@ -86,48 +86,48 @@ const Navbar = () => {
 
             {/* mobile menu */}
             <ul className={ nav ? 'absolute top-20 left-0 w-full h-screen bg-[#0a192f] text-2xl flex flex-col items-center' : 'hidden' }>
-                <li className="py-4">
-                    <Link onClick={closeMenu} to="home" smooth={true} duration={500}>
+                <li className="py-3">
+                    <Link onClick={closeMenu} to="home" smooth={true} duration={500} offset={-96}>
                         Home
                     </Link>
                 </li>
-                <li className="py-4">
-                    <Link onClick={closeMenu} to="about" smooth={true} duration={500} offset={-100}>
+                <li className="py-3">
+                    <Link onClick={closeMenu} to="about" smooth={true} duration={500} offset={-96}>
                         About
                     </Link>
                 </li>
-                <li className="py-4">
-                    <Link onClick={closeMenu} to="skills" smooth={true} duration={500} offset={-100}>
+                <li className="py-3">
+                    <Link onClick={closeMenu} to="skills" smooth={true} duration={500} offset={-96}>
                         Skills
                     </Link>
                 </li>
-                <li className="py-4">
-                    <Link onClick={closeMenu} to="work" smooth={true} duration={500} offset={-100}>
+                <li className="py-3">
+                    <Link onClick={closeMenu} to="work" smooth={true} duration={500} offset={-96}>
                         Work
                     </Link>
                 </li>
-                <li className="py-4">
-                    <Link onClick={closeMenu} to="contact" smooth={true} duration={500} offset={-100}>
+                <li className="py-3">
+                    <Link onClick={closeMenu} to="contact" smooth={true} duration={500} offset={-96}>
                         Contact
                     </Link>
                 </li>
-                <div className="border-b border-gray-300 w-1/2 max-w-xs mx-auto my-4"></div>
-                <li className="py-4">
+                <div className="border-b border-gray-300 w-1/2 max-w-xs mx-auto my-3"></div>
+                <li className="py-3">
                     <a href="https://github.com/michagodfrey" className="flex justify-between items-center">
                         GitHub <FaGithub size={30} className="ml-4" />
                     </a>
                 </li>
-                <li className="py-4">
+                <li className="py-3">
                     <a href="https://twitter.com/Michael07865192" className="flex justify-between items-center">
                         Twitter <FaTwitter size={30} className="ml-4" />
                     </a>
                 </li>
-                <li className="py-4">
+                <li className="py-3">
                     <a href="https://www.linkedin.com/in/michael-godfrey-82258bb3/" className="flex justify-between items-center">
                         LinkedIn <FaLinkedin size={30} className="ml-4" />
                     </a>
                 </li>
-                <li className="py-4">
+                <li className="py-3">
                     <a href="https://docs.google.com/document/d/1jRoP_4aEGobglqGzhDAHdmLf8L9kWNda/edit?rtpof=true" className="flex justify-between items-center">
                         Resume <BsFillPersonLinesFill size={30} className="ml-4" />
                     </a>

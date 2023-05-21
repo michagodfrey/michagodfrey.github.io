@@ -10,8 +10,8 @@ import Bootstrap from '../assets/bootstrap.webp';
 
 const Skills = () => {
   return (
-    <div name="skills" className="h-screen">
-        <div className="max-w-screen-xl mx-auto px-8 lg:px-24 flex flex-col md:justify-center w-full h-full">
+    <div name="skills" className="min-h-screen py-8 grid">
+        <div className="max-w-screen-xl mx-auto px-8 lg:px-36 flex flex-col justify-center w-full h-full">
             <div>
                 <h2 className="text-4xl inline border-b-4 border-emerald-600">Skills</h2>
                 <p className="py-4">My tech stack. These are the languages, frameworks, libraries and platforms I'm most familiar with.</p>
