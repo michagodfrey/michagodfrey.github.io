@@ -7,6 +7,8 @@ import FireBase from '../assets/firebase.webp';
 import GitHub from '../assets/github.webp';
 import Tailwind from '../assets/tailwind.webp';
 import Bootstrap from '../assets/bootstrap.webp';
+import Node from '../assets/node.webp';
+import Mongo from '../assets/mongo.webp';
 
 const Skills = () => {
   return (
@@ -49,6 +51,14 @@ const Skills = () => {
                 <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                     <img src={FireBase} alt="FireBase icon" className="w-20 mx-auto" />
                     <p className="my-4">FireBase</p>
+                </div>
+                <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                    <img src={Node} alt="NodeJS icon" className="w-20 mx-auto" />
+                    <p className="my-4">NodeJS</p>
+                </div>
+                <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                    <img src={Mongo} alt="MongoDB icon" className="w-20 mx-auto" />
+                    <p className="my-4">MongoDB</p>
                 </div>
             </div>
         </div>
