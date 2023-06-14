@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.01a476b8.css",
-    "main.js": "/static/js/main.ebc1f883.js",
+    "main.js": "/static/js/main.0addf735.js",
     "static/media/bootstrap.webp": "/static/media/bootstrap.5585775486219e08afd1.webp",
     "static/media/react.webp": "/static/media/react.eabf4c82eff971c8b66a.webp",
+    "static/media/node.webp": "/static/media/node.b5a44eaef3d2325573f9.webp",
     "static/media/github.webp": "/static/media/github.45e7d2ce22c2150e94e1.webp",
+    "static/media/mongo.webp": "/static/media/mongo.1e04d1515e520f4d5f76.webp",
     "static/media/tailwind.webp": "/static/media/tailwind.a1e5c053349fc03215af.webp",
     "static/media/firebase.webp": "/static/media/firebase.b5a7ce6afa34cb3f0f1a.webp",
     "static/media/html.webp": "/static/media/html.97582132a45292f3facd.webp",
@@ -13,10 +15,10 @@
     "index.html": "/index.html",
     "static/media/MG.webp": "/static/media/MG.af60087c289060fa5226.webp",
     "main.01a476b8.css.map": "/static/css/main.01a476b8.css.map",
-    "main.ebc1f883.js.map": "/static/js/main.ebc1f883.js.map"
+    "main.0addf735.js.map": "/static/js/main.0addf735.js.map"
   },
   "entrypoints": [
     "static/css/main.01a476b8.css",
-    "static/js/main.ebc1f883.js"
+    "static/js/main.0addf735.js"
   ]
 }
