@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.01a476b8.css",
-    "main.js": "/static/js/main.0addf735.js",
+    "main.css": "/static/css/main.c861dbf3.css",
+    "main.js": "/static/js/main.c1689ac6.js",
     "static/media/bootstrap.webp": "/static/media/bootstrap.5585775486219e08afd1.webp",
     "static/media/react.webp": "/static/media/react.eabf4c82eff971c8b66a.webp",
     "static/media/node.webp": "/static/media/node.b5a44eaef3d2325573f9.webp",
@@ -14,11 +14,11 @@
     "static/media/javascript.webp": "/static/media/javascript.7ef5ef6eecc30b71ca21.webp",
     "index.html": "/index.html",
     "static/media/MG.webp": "/static/media/MG.af60087c289060fa5226.webp",
-    "main.01a476b8.css.map": "/static/css/main.01a476b8.css.map",
-    "main.0addf735.js.map": "/static/js/main.0addf735.js.map"
+    "main.c861dbf3.css.map": "/static/css/main.c861dbf3.css.map",
+    "main.c1689ac6.js.map": "/static/js/main.c1689ac6.js.map"
   },
   "entrypoints": [
-    "static/css/main.01a476b8.css",
-    "static/js/main.0addf735.js"
+    "static/css/main.c861dbf3.css",
+    "static/js/main.c1689ac6.js"
   ]
 }
